@@ -29,6 +29,7 @@ const translations = {
     statLocal:      'วัตถุดิบท้องถิ่น',
     aboutAddr:      'สำนักงานใหญ่ตั้งอยู่ที่ <strong>115/1 หมู่ที่ 2 ตำบลท่าแค อำเภอเมืองพัทลุง จังหวัดพัทลุง 93000</strong><br/>เลขประจำตัวผู้เสียภาษี: <strong>0935569001087</strong>',
     aboutBadge:     'ผลผลิตจากพัทลุง<br/>สู่ตลาดทั่วประเทศ',
+    aboutImgPlaceholder: 'ภาพบรรยากาศบริษัท',
 
     servTag:        'ธุรกิจของเรา',
     servTitle:      '4 กลุ่มธุรกิจหลัก',
@@ -134,6 +135,7 @@ const translations = {
     statLocal:      'Local Ingredients',
     aboutAddr:      'Headquarters at <strong>115/1 Moo 2, Tha Khae, Mueang Phatthalung, Phatthalung 93000</strong><br/>Tax ID: <strong>0935569001087</strong>',
     aboutBadge:     'Produce from Phatthalung<br/>to Markets Nationwide',
+    aboutImgPlaceholder: 'Company Photo',
 
     servTag:        'Our Business',
     servTitle:      '4 Core Business Units',
@@ -239,6 +241,7 @@ const translations = {
     statLocal:      '本地食材',
     aboutAddr:      '总部位于 <strong>115/1 村2，塔凯，博他伦市，博他伦府 93000</strong><br/>纳税人识别号：<strong>0935569001087</strong>',
     aboutBadge:     '帕他伦府产品<br/>销往全国市场',
+    aboutImgPlaceholder: '公司环境照片',
 
     servTag:        '业务范围',
     servTitle:      '四大核心业务',
