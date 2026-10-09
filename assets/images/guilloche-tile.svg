@@ -1,24 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
   <defs>
-    <!-- Hologram iridescent gradients -->
-    <linearGradient id="h1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#ff80d0"/>
-      <stop offset="25%"  stop-color="#ffe066"/>
-      <stop offset="50%"  stop-color="#80ffcc"/>
-      <stop offset="75%"  stop-color="#66b3ff"/>
-      <stop offset="100%" stop-color="#cc80ff"/>
+    <!-- Hologram THAI-D iridescent gradients -->
+    <linearGradient id="h1" x1="0%" y1="0%" x2="100%" y2="100%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#ff00aa" stop-opacity="0.9"/>
+      <stop offset="16%"  stop-color="#ff6600" stop-opacity="0.85"/>
+      <stop offset="32%"  stop-color="#ffee00" stop-opacity="0.9"/>
+      <stop offset="48%"  stop-color="#00ff88" stop-opacity="0.85"/>
+      <stop offset="64%"  stop-color="#00aaff" stop-opacity="0.9"/>
+      <stop offset="80%"  stop-color="#aa00ff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ff00aa" stop-opacity="0.9"/>
+      <animateTransform attributeName="gradientTransform" type="rotate"
+        from="0 250 250" to="360 250 250" dur="4s" repeatCount="indefinite"/>
     </linearGradient>
-    <linearGradient id="h2" x1="100%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%"   stop-color="#66b3ff"/>
-      <stop offset="33%"  stop-color="#ff80d0"/>
-      <stop offset="66%"  stop-color="#ffe066"/>
-      <stop offset="100%" stop-color="#80ffcc"/>
+
+    <linearGradient id="h2" x1="100%" y1="0%" x2="0%" y2="100%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#00aaff" stop-opacity="0.9"/>
+      <stop offset="20%"  stop-color="#aa00ff" stop-opacity="0.85"/>
+      <stop offset="40%"  stop-color="#ff00aa" stop-opacity="0.9"/>
+      <stop offset="60%"  stop-color="#ffee00" stop-opacity="0.85"/>
+      <stop offset="80%"  stop-color="#00ff88" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#00aaff" stop-opacity="0.85"/>
+      <animateTransform attributeName="gradientTransform" type="rotate"
+        from="360 250 250" to="0 250 250" dur="5s" repeatCount="indefinite"/>
     </linearGradient>
-    <linearGradient id="h3" x1="50%" y1="0%" x2="50%" y2="100%">
-      <stop offset="0%"   stop-color="#cc80ff"/>
-      <stop offset="50%"  stop-color="#80ffe6"/>
-      <stop offset="100%" stop-color="#ff9966"/>
+
+    <linearGradient id="h3" x1="50%" y1="0%" x2="50%" y2="100%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#ffee00" stop-opacity="0.9"/>
+      <stop offset="25%"  stop-color="#00ff88" stop-opacity="0.85"/>
+      <stop offset="50%"  stop-color="#00aaff" stop-opacity="0.9"/>
+      <stop offset="75%"  stop-color="#ff00aa" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#aa00ff" stop-opacity="0.9"/>
+      <animateTransform attributeName="gradientTransform" type="rotate"
+        from="0 250 250" to="360 250 250" dur="6s" repeatCount="indefinite"/>
     </linearGradient>
+
+    <!-- Shimmer overlay gradient -->
+    <radialGradient id="shimmer" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="40%"  stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0"/>
+      <animate attributeName="cx" values="30%;70%;30%" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="30%;70%;30%" dur="4s" repeatCount="indefinite"/>
+    </radialGradient>
   </defs>
 
   <!-- =====================================================
@@ -137,6 +160,9 @@
     <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(160 250 250)" stroke="url(#h1)"/>
     <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(170 250 250)" stroke="url(#h2)"/>
   </g>
+
+  <!-- Shimmer overlay — เหลือบแสงเคลื่อนที่ -->
+  <ellipse cx="250" cy="250" rx="240" ry="240" fill="url(#shimmer)" opacity="0.6"/>
 
   <!-- จุดกลาง -->
   <circle cx="250" cy="250" r="3" fill="url(#h1)" opacity="0.7"/>

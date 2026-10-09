@@ -763,11 +763,11 @@ ul { list-style: none; }
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  opacity: 0.16;
+  opacity: 0.45;
   pointer-events: none;
   mix-blend-mode: screen;
-  animation: guillocheHolo 14s ease-in-out infinite alternate-reverse;
-  filter: brightness(1.5) contrast(0.8) saturate(0.3);
+  animation: guillocheHolo 10s ease-in-out infinite alternate-reverse;
+  filter: brightness(1.2) contrast(1.1) saturate(2.5);
   z-index: 0;
 }
 
@@ -1464,28 +1464,28 @@ ul { list-style: none; }
   position: absolute;
   top: -60%;
   right: -15%;
-  width: 150vh;
-  height: 150vh;
-  min-width: 878px;
-  min-height: 878px;
+  width: 155vh;
+  height: 155vh;
+  min-width: 904px;
+  min-height: 904px;
   background-image: url('../images/guilloche-tile.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  opacity: 0.22;
+  opacity: 0.55;
   pointer-events: none;
   mix-blend-mode: screen;
-  animation: guillocheHolo 12s ease-in-out infinite alternate;
-  filter: brightness(1.5) contrast(0.8) saturate(0.3);
+  animation: guillocheHolo 8s ease-in-out infinite alternate;
+  filter: brightness(1.2) contrast(1.1) saturate(2.5);
 }
 
 @keyframes guillocheHolo {
-  0%   { opacity: 0.08; filter: hue-rotate(0deg)   brightness(1.20) contrast(0.88); }
-  20%  { opacity: 0.12; filter: hue-rotate(40deg)  brightness(1.30) contrast(0.95); }
-  40%  { opacity: 0.10; filter: hue-rotate(80deg)  brightness(1.25) contrast(0.90); }
-  60%  { opacity: 0.13; filter: hue-rotate(120deg) brightness(1.35) contrast(1.00); }
-  80%  { opacity: 0.11; filter: hue-rotate(160deg) brightness(1.28) contrast(0.92); }
-  100% { opacity: 0.09; filter: hue-rotate(200deg) brightness(1.22) contrast(0.88); }
+  0%   { opacity: 0.45; filter: hue-rotate(0deg)   brightness(1.2) contrast(1.1) saturate(2.5); }
+  20%  { opacity: 0.60; filter: hue-rotate(60deg)  brightness(1.3) contrast(1.2) saturate(3.0); }
+  40%  { opacity: 0.50; filter: hue-rotate(120deg) brightness(1.2) contrast(1.1) saturate(2.8); }
+  60%  { opacity: 0.65; filter: hue-rotate(180deg) brightness(1.35) contrast(1.2) saturate(3.0); }
+  80%  { opacity: 0.50; filter: hue-rotate(240deg) brightness(1.25) contrast(1.1) saturate(2.6); }
+  100% { opacity: 0.45; filter: hue-rotate(300deg) brightness(1.2) contrast(1.1) saturate(2.5); }
 }
 
 /* Keep hero content above guilloche */
@@ -1757,7 +1757,7 @@ ul { list-style: none; }
     min-height: unset !important;
     top: -10% !important;
     right: -20% !important;
-    opacity: 0.14 !important;
+    opacity: 0.50 !important;
   }
 
   .footer::before {
@@ -1765,6 +1765,7 @@ ul { list-style: none; }
     height: 260px !important;
     min-width: unset !important;
     min-height: unset !important;
+    opacity: 0.40 !important;
   }
 }
 
