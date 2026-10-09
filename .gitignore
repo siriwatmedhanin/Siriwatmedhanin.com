@@ -1,0 +1,18 @@
+# ไฟล์ลับ — ห้าม push ขึ้น GitHub
+.env
+.env.local
+.env.production
+*.key
+*.pem
+*.p12
+secrets.json
+config.local.js
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/settings.json
+*.log
