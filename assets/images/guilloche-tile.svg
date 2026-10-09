@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <!-- Hologram iridescent gradients -->
+    <linearGradient id="h1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#ff80d0"/>
+      <stop offset="25%"  stop-color="#ffe066"/>
+      <stop offset="50%"  stop-color="#80ffcc"/>
+      <stop offset="75%"  stop-color="#66b3ff"/>
+      <stop offset="100%" stop-color="#cc80ff"/>
+    </linearGradient>
+    <linearGradient id="h2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#66b3ff"/>
+      <stop offset="33%"  stop-color="#ff80d0"/>
+      <stop offset="66%"  stop-color="#ffe066"/>
+      <stop offset="100%" stop-color="#80ffcc"/>
+    </linearGradient>
+    <linearGradient id="h3" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%"   stop-color="#cc80ff"/>
+      <stop offset="50%"  stop-color="#80ffe6"/>
+      <stop offset="100%" stop-color="#ff9966"/>
+    </linearGradient>
+  </defs>
+
+  <!-- =====================================================
+    SPIROGRAPH PATTERN
+    ลายกลีบดอกใหญ่รอบนอก: วงกลมรัศมี r หมุนรอบ R
+    เส้นทุกเส้น = ellipse กลางเต็ม หมุนทีละ 360/N องศา
+
+    Layer A: กลีบยาวนอกสุด (rx=200, ry=72) × 20 กลีบ
+    Layer B: กลีบกลาง (rx=148, ry=52) × 24 กลีบ
+    Layer C: วงกลมในใหญ่ (r=160)
+    Layer D: เส้นรัศมี 24 เส้น จากกลางถึงวงใน
+    Layer E: ดาวกลางเล็ก (rx=30, ry=8) × 18 กลีบ
+  ===================================================== -->
+
+  <!-- Layer A: กลีบยาวนอกสุด 20 กลีบ -->
+  <g fill="none" stroke-width="0.9" opacity="0.82">
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(0   250 250)" stroke="url(#h1)"/>
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(18  250 250)" stroke="url(#h2)"/>
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(36  250 250)" stroke="url(#h3)"/>
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(54  250 250)" stroke="url(#h1)"/>
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(72  250 250)" stroke="url(#h2)"/>
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(90  250 250)" stroke="url(#h3)"/>
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(108 250 250)" stroke="url(#h1)"/>
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(126 250 250)" stroke="url(#h2)"/>
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(144 250 250)" stroke="url(#h3)"/>
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(162 250 250)" stroke="url(#h1)"/>
+  </g>
+
+  <!-- Layer A2: กลีบยาวนอกสุด ชุด offset 9 องศา -->
+  <g fill="none" stroke-width="0.9" opacity="0.70">
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(9   250 250)" stroke="url(#h3)"/>
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(27  250 250)" stroke="url(#h1)"/>
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(45  250 250)" stroke="url(#h2)"/>
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(63  250 250)" stroke="url(#h3)"/>
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(81  250 250)" stroke="url(#h1)"/>
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(99  250 250)" stroke="url(#h2)"/>
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(117 250 250)" stroke="url(#h3)"/>
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(135 250 250)" stroke="url(#h1)"/>
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(153 250 250)" stroke="url(#h2)"/>
+    <ellipse cx="250" cy="250" rx="200" ry="72" transform="rotate(171 250 250)" stroke="url(#h3)"/>
+  </g>
+
+  <!-- Layer B: กลีบกลาง ขนาดกลาง 24 กลีบ -->
+  <g fill="none" stroke-width="0.75" opacity="0.75">
+    <ellipse cx="250" cy="250" rx="148" ry="52" transform="rotate(0   250 250)" stroke="url(#h2)"/>
+    <ellipse cx="250" cy="250" rx="148" ry="52" transform="rotate(15  250 250)" stroke="url(#h3)"/>
+    <ellipse cx="250" cy="250" rx="148" ry="52" transform="rotate(30  250 250)" stroke="url(#h1)"/>
+    <ellipse cx="250" cy="250" rx="148" ry="52" transform="rotate(45  250 250)" stroke="url(#h2)"/>
+    <ellipse cx="250" cy="250" rx="148" ry="52" transform="rotate(60  250 250)" stroke="url(#h3)"/>
+    <ellipse cx="250" cy="250" rx="148" ry="52" transform="rotate(75  250 250)" stroke="url(#h1)"/>
+    <ellipse cx="250" cy="250" rx="148" ry="52" transform="rotate(90  250 250)" stroke="url(#h2)"/>
+    <ellipse cx="250" cy="250" rx="148" ry="52" transform="rotate(105 250 250)" stroke="url(#h3)"/>
+    <ellipse cx="250" cy="250" rx="148" ry="52" transform="rotate(120 250 250)" stroke="url(#h1)"/>
+    <ellipse cx="250" cy="250" rx="148" ry="52" transform="rotate(135 250 250)" stroke="url(#h2)"/>
+    <ellipse cx="250" cy="250" rx="148" ry="52" transform="rotate(150 250 250)" stroke="url(#h3)"/>
+    <ellipse cx="250" cy="250" rx="148" ry="52" transform="rotate(165 250 250)" stroke="url(#h1)"/>
+  </g>
+
+  <!-- Layer C: วงกลมใหญ่ตรงกลาง (เหมือนในรูป) -->
+  <circle cx="250" cy="250" r="158" fill="none" stroke="url(#h1)" stroke-width="1.6" opacity="0.90"/>
+  <circle cx="250" cy="250" r="155" fill="none" stroke="url(#h2)" stroke-width="0.7" opacity="0.60"/>
+
+  <!-- Layer D: เส้นรัศมี 24 เส้น จากขอบวงกลมถึงกลาง (สร้าง wheel spoke effect) -->
+  <g fill="none" stroke-width="0.65" opacity="0.85">
+    <line x1="250" y1="250" x2="250" y2="92"  stroke="url(#h1)"/>
+    <line x1="250" y1="250" x2="316" y2="96"  stroke="url(#h2)"/>
+    <line x1="250" y1="250" x2="371" y2="129" stroke="url(#h3)"/>
+    <line x1="250" y1="250" x2="408" y2="184" stroke="url(#h1)"/>
+    <line x1="250" y1="250" x2="408" y2="250" stroke="url(#h2)"/>
+    <line x1="250" y1="250" x2="408" y2="316" stroke="url(#h3)"/>
+    <line x1="250" y1="250" x2="371" y2="371" stroke="url(#h1)"/>
+    <line x1="250" y1="250" x2="316" y2="404" stroke="url(#h2)"/>
+    <line x1="250" y1="250" x2="250" y2="408" stroke="url(#h3)"/>
+    <line x1="250" y1="250" x2="184" y2="404" stroke="url(#h1)"/>
+    <line x1="250" y1="250" x2="129" y2="371" stroke="url(#h2)"/>
+    <line x1="250" y1="250" x2="92"  y2="316" stroke="url(#h3)"/>
+    <line x1="250" y1="250" x2="92"  y2="250" stroke="url(#h1)"/>
+    <line x1="250" y1="250" x2="92"  y2="184" stroke="url(#h2)"/>
+    <line x1="250" y1="250" x2="129" y2="129" stroke="url(#h3)"/>
+    <line x1="250" y1="250" x2="184" y2="96"  stroke="url(#h1)"/>
+    <!-- เส้น offset 7.5 องศา สร้าง dense wheel -->
+    <line x1="250" y1="250" x2="284" y2="93"  stroke="url(#h2)"/>
+    <line x1="250" y1="250" x2="346" y2="110" stroke="url(#h3)"/>
+    <line x1="250" y1="250" x2="392" y2="154" stroke="url(#h1)"/>
+    <line x1="250" y1="250" x2="408" y2="217" stroke="url(#h2)"/>
+    <line x1="250" y1="250" x2="392" y2="346" stroke="url(#h3)"/>
+    <line x1="250" y1="250" x2="346" y2="390" stroke="url(#h1)"/>
+    <line x1="250" y1="250" x2="217" y2="407" stroke="url(#h2)"/>
+    <line x1="250" y1="250" x2="154" y2="392" stroke="url(#h3)"/>
+    <line x1="250" y1="250" x2="110" y2="346" stroke="url(#h1)"/>
+    <line x1="250" y1="250" x2="93"  y2="217" stroke="url(#h2)"/>
+    <line x1="250" y1="250" x2="110" y2="154" stroke="url(#h3)"/>
+    <line x1="250" y1="250" x2="154" y2="110" stroke="url(#h1)"/>
+    <line x1="250" y1="250" x2="217" y2="93"  stroke="url(#h2)"/>
+    <line x1="250" y1="250" x2="284" y2="407" stroke="url(#h3)"/>
+  </g>
+
+  <!-- Layer E: ดาว/กลีบเล็กตรงกลาง 18 กลีบ -->
+  <g fill="none" stroke-width="0.6" opacity="0.88">
+    <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(0   250 250)" stroke="url(#h3)"/>
+    <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(10  250 250)" stroke="url(#h1)"/>
+    <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(20  250 250)" stroke="url(#h2)"/>
+    <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(30  250 250)" stroke="url(#h3)"/>
+    <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(40  250 250)" stroke="url(#h1)"/>
+    <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(50  250 250)" stroke="url(#h2)"/>
+    <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(60  250 250)" stroke="url(#h3)"/>
+    <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(70  250 250)" stroke="url(#h1)"/>
+    <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(80  250 250)" stroke="url(#h2)"/>
+    <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(90  250 250)" stroke="url(#h3)"/>
+    <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(100 250 250)" stroke="url(#h1)"/>
+    <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(110 250 250)" stroke="url(#h2)"/>
+    <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(120 250 250)" stroke="url(#h3)"/>
+    <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(130 250 250)" stroke="url(#h1)"/>
+    <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(140 250 250)" stroke="url(#h2)"/>
+    <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(150 250 250)" stroke="url(#h3)"/>
+    <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(160 250 250)" stroke="url(#h1)"/>
+    <ellipse cx="250" cy="250" rx="30" ry="8" transform="rotate(170 250 250)" stroke="url(#h2)"/>
+  </g>
+
+  <!-- จุดกลาง -->
+  <circle cx="250" cy="250" r="3" fill="url(#h1)" opacity="0.7"/>
+
+</svg>

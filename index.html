@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="บริษัท ศิริวัตร์เมธานินท์ กรุ๊ป จำกัด — อาหารท้องถิ่น ผลผลิตเกษตรพรีเมียม วิจัยและพัฒนา เพื่อชุมชน" />
+  <title>ศิริวัตร์เมธานินท์ กรุ๊ป | SIRIWATMEDHANIN CO., LTD.</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Prompt:wght@300;400;500;600;700&family=Kanit:wght@300;400;500;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+
+      <!-- Logo -->
+      <a href="#home" class="navbar__logo">
+        <div class="logo-mark">
+          <div class="logo-circle">
+            <img src="assets/images/logo-smg-bg1.png" alt="SMG Logo" class="logo-img" />
+          </div>
+        </div>
+        <div class="logo-text">
+          <span class="logo-text--th" data-i18n="brandTh">บริษัท ศิริวัตร์เมธานินท์ กรุ๊ป จำกัด</span>
+          <span class="logo-text--en" data-i18n="brandEn">SIRIWATMEDHANIN CO., LTD.</span>
+        </div>
+      </a>
+
+      <!-- Nav Menu -->
+      <nav class="navbar__menu" id="navMenu">
+        <ul class="navbar__links">
+          <li><a href="#about"    data-i18n="navAbout">เกี่ยวกับเรา</a></li>
+          <li><a href="#services" data-i18n="navServices">ธุรกิจของเรา</a></li>
+          <li><a href="#benefits" data-i18n="navBenefits">จุดเด่น</a></li>
+          <li><a href="#why-us"   data-i18n="navWhy">ทำไมต้องเรา</a></li>
+          <li><a href="#contact"  data-i18n="navContact">ติดต่อเรา</a></li>
+        </ul>
+      </nav>
+
+      <!-- Language Switcher -->
+      <div class="lang-switcher" id="langSwitcher">
+
+        <button class="lang-btn lang-btn--active" data-lang="th" aria-label="ภาษาไทย">
+          <span class="lang-flag-wrap">
+            <!-- Thailand flag -->
+            <svg class="flag-circle" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+              <clipPath id="clip-th"><circle cx="18" cy="18" r="18"/></clipPath>
+              <g clip-path="url(#clip-th)">
+                <rect width="36" height="36" fill="#A51931"/>
+                <rect y="6" width="36" height="24" fill="#F4F5F0"/>
+                <rect y="12" width="36" height="12" fill="#2D2A4A"/>
+              </g>
+            </svg>
+          </span>
+          <span class="lang-code">TH</span>
+        </button>
+
+        <button class="lang-btn" data-lang="en" aria-label="English">
+          <span class="lang-flag-wrap">
+            <!-- UK flag -->
+            <svg class="flag-circle" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+              <clipPath id="clip-gb"><circle cx="18" cy="18" r="18"/></clipPath>
+              <g clip-path="url(#clip-gb)">
+                <rect width="36" height="36" fill="#012169"/>
+                <path d="M0,0 L36,36 M36,0 L0,36" stroke="#fff" stroke-width="6"/>
+                <path d="M0,0 L36,36 M36,0 L0,36" stroke="#C8102E" stroke-width="3.6"/>
+                <path d="M18,0 V36 M0,18 H36" stroke="#fff" stroke-width="9"/>
+                <path d="M18,0 V36 M0,18 H36" stroke="#C8102E" stroke-width="5.4"/>
+              </g>
+            </svg>
+          </span>
+          <span class="lang-code">EN</span>
+        </button>
+
+        <button class="lang-btn" data-lang="zh" aria-label="中文">
+          <span class="lang-flag-wrap">
+            <!-- China flag -->
+            <svg class="flag-circle" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+              <clipPath id="clip-cn"><circle cx="18" cy="18" r="18"/></clipPath>
+              <g clip-path="url(#clip-cn)">
+                <rect width="36" height="36" fill="#DE2910"/>
+                <!-- Large star -->
+                <polygon points="9,5 10.5,9.5 15,9.5 11.5,12 13,16.5 9,14 5,16.5 6.5,12 3,9.5 7.5,9.5" fill="#FFDE00"/>
+                <!-- Small stars -->
+                <polygon points="16,3 16.7,5.2 19,5.2 17.2,6.5 17.9,8.7 16,7.4 14.1,8.7 14.8,6.5 13,5.2 15.3,5.2" fill="#FFDE00" transform="scale(0.5) translate(13,2)"/>
+                <polygon points="16,3 16.7,5.2 19,5.2 17.2,6.5 17.9,8.7 16,7.4 14.1,8.7 14.8,6.5 13,5.2 15.3,5.2" fill="#FFDE00" transform="scale(0.5) translate(22,-4)"/>
+                <polygon points="16,3 16.7,5.2 19,5.2 17.2,6.5 17.9,8.7 16,7.4 14.1,8.7 14.8,6.5 13,5.2 15.3,5.2" fill="#FFDE00" transform="scale(0.5) translate(25,5)"/>
+                <polygon points="16,3 16.7,5.2 19,5.2 17.2,6.5 17.9,8.7 16,7.4 14.1,8.7 14.8,6.5 13,5.2 15.3,5.2" fill="#FFDE00" transform="scale(0.5) translate(22,14)"/>
+              </g>
+            </svg>
+          </span>
+          <span class="lang-code">ZH</span>
+        </button>
+
+      </div>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero__overlay"></div>
+    <div class="hero__content container">
+      <p class="hero__eyebrow" data-i18n="heroEyebrow">ยินดีต้อนรับสู่</p>
+      <h1 class="hero__title" data-i18n="heroTitle">บริษัท ศิริวัตร์เมธานินท์ กรุ๊ป จำกัด</h1>
+      <p class="hero__subtitle" data-i18n="heroSubtitle">SIRIWATMEDHANIN CO., LTD.</p>
+      <div class="hero__gold-line"></div>
+      <p class="hero__desc" data-i18n="heroDesc">
+        กลุ่มธุรกิจที่บูรณาการความหลากหลาย — จากรสชาติดั้งเดิมของภาคใต้<br />
+        สู่ผลผลิตเกษตรพรีเมียม และนวัตกรรมการแปรรูปสู่อนาคต
+      </p>
+      <div class="hero__actions">
+        <a href="#services" class="btn btn--primary" data-i18n="heroCta1">ดูธุรกิจของเรา</a>
+        <a href="#contact" class="btn btn--outline" data-i18n="heroCta2">ติดต่อเรา</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <a href="#about"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag" data-i18n="aboutTag">เกี่ยวกับเรา</span>
+        <h2 class="section__title" data-i18n="aboutTitle">บริษัท ศิริวัตร์เมธานินท์ กรุ๊ป จำกัด</h2>
+        <div class="section__divider"></div>
+      </div>
+      <div class="about__grid">
+        <div class="about__text">
+          <p class="about__lead" data-i18n="aboutLead">
+            เราคือกลุ่มธุรกิจที่เกิดจากรากฐานของชุมชนภาคใต้ มุ่งมั่นยกระดับผลิตภัณฑ์ท้องถิ่นให้มีมาตรฐานระดับสากล
+          </p>
+          <p data-i18n="aboutP1">
+            จากพัทลุงสู่ตลาดทั่วประเทศ เราดำเนินธุรกิจที่ครอบคลุม 4 กลุ่มหลัก ตั้งแต่อาหารดั้งเดิมตำรับใต้แท้ ผลผลิตเกษตรคุณภาพสูง งานวิจัยและพัฒนาผลิตภัณฑ์ใหม่ ไปจนถึงการสนับสนุนเกษตรกรในพื้นที่ เพื่อสร้างระบบนิเวศทางเศรษฐกิจที่ยั่งยืน
+          </p>
+          <p data-i18n="aboutAddr">
+            สำนักงานใหญ่ตั้งอยู่ที่ <strong>115/1 หมู่ที่ 2 ตำบลท่าแค อำเภอเมืองพัทลุง จังหวัดพัทลุง 93000</strong><br />
+            เลขประจำตัวผู้เสียภาษี: <strong>0935569001087</strong>
+          </p>
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__number">4</span>
+              <span class="stat__label" data-i18n="statBiz">กลุ่มธุรกิจ</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">3</span>
+              <span class="stat__label" data-i18n="statBrand">แบรนด์ในเครือ</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">100%</span>
+              <span class="stat__label" data-i18n="statLocal">วัตถุดิบท้องถิ่น</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__visual">
+          <div class="about__img-wrap">
+            <div class="about__img-placeholder">
+              <i class="fas fa-seedling"></i>
+              <span>ภาพบรรยากาศบริษัท</span>
+            </div>
+          </div>
+          <div class="about__badge">
+            <i class="fas fa-leaf"></i>
+            <span data-i18n="aboutBadge">ผลผลิตจากพัทลุง<br />สู่ตลาดทั่วประเทศ</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== EXECUTIVE TEAM ========== -->
+      <div class="exec-team">
+        <div class="exec-team__header">
+          <h3 class="exec-team__title" data-i18n="execTitle">ทีมผู้บริหาร</h3>
+          <div class="exec-team__divider"></div>
+        </div>
+        <div class="exec-team__grid">
+
+          <!-- คนที่ 1: คุณณัฐชาธรณ์ -->
+          <div class="exec-card">
+            <div class="exec-card__portrait">
+              <div class="exec-card__portrait-placeholder">
+                <i class="fas fa-user-tie"></i>
+                <span data-i18n="execPhotoLabel">ภาพพอร์ตเทรต</span>
+              </div>
+            </div>
+            <div class="exec-card__body">
+              <div class="exec-card__quote">
+                <i class="fas fa-quote-left exec-card__quote-icon"></i>
+                <p data-i18n="exec1Quote">"การเติบโตที่ยั่งยืน คือการนำนวัตกรรมมายกระดับคุณค่าดั้งเดิม และก้าวไปข้างหน้าพร้อมกับชุมชน"</p>
+              </div>
+              <h4 class="exec-card__name" data-i18n="exec1Name">คุณณัฐชาธรณ์ ศิริวัตร์เมธานินท์</h4>
+              <p class="exec-card__position" data-i18n="exec1Pos">Founder &amp; Director</p>
+              <p class="exec-card__tag" data-i18n="exec1Tag">บริหาร · นวัตกรรม · ยุทธศาสตร์องค์กร</p>
+              <p class="exec-card__vision" data-i18n="exec1Vision">ในฐานะผู้ก่อตั้ง ศิริวัตร์เมธานินท์ กรุ๊ป คุณณัฐชาธรณ์คือผู้ขับเคลื่อนองค์กรด้วยแนวคิด Digital-first โดยผสานความเชี่ยวชาญด้านเทคโนโลยีและการสื่อสารเชิงกลยุทธ์เข้ากับการบริหารจัดการธุรกิจและระบบคลังสินค้ายุคใหม่ ด้วยเป้าหมายที่ต้องการนำมรดกทางวัฒนธรรมและผลผลิตทางการเกษตรของท้องถิ่นก้าวสู่มาตรฐานที่สูงขึ้น คุณณัฐชาธรณ์จึงให้ความสำคัญกับการริเริ่มนวัตกรรมใหม่ๆ (R&amp;D) การสร้างแบรนด์ที่แข็งแกร่ง ควบคู่กับปณิธานที่แน่วแน่ในการสนับสนุนเกษตรกรภาคใต้และกระจายรายได้สู่ชุมชน เพื่อสร้างรากฐานธุรกิจที่เติบโตอย่างมั่นคงและยั่งยืน</p>
+            </div>
+          </div>
+
+          <!-- คนที่ 2: คุณวิไลลักษณ์ -->
+          <div class="exec-card">
+            <div class="exec-card__portrait">
+              <div class="exec-card__portrait-placeholder">
+                <i class="fas fa-user-tie"></i>
+                <span data-i18n="execPhotoLabel">ภาพพอร์ตเทรต</span>
+              </div>
+            </div>
+            <div class="exec-card__body">
+              <div class="exec-card__quote">
+                <i class="fas fa-quote-left exec-card__quote-icon"></i>
+                <p data-i18n="exec2Quote">"รสมือที่แท้จริง คือการรักษารากเหง้าของวัตถุดิบ และส่งต่อความใส่ใจจากรุ่นสู่รุ่น"</p>
+              </div>
+              <h4 class="exec-card__name" data-i18n="exec2Name">คุณวิไลลักษณ์ เพชรคง</h4>
+              <p class="exec-card__position" data-i18n="exec2Pos">Co-Founder &amp; Heritage Director</p>
+              <p class="exec-card__tag" data-i18n="exec2Tag">สืบสานภูมิปัญญา · มรดกอาหาร · ควบคุมคุณภาพ</p>
+              <p class="exec-card__vision" data-i18n="exec2Vision">ในฐานะหัวใจสำคัญของแบรนด์ "ตำรับแม่ฉวี" คุณวิไลลักษณ์คือเสาหลักในการสืบสานและควบคุมคุณภาพของภูมิปัญญาอาหารใต้อย่างแท้จริง ด้วยความมุ่งมั่นและความพิถีพิถันในทุกขั้นตอน ตั้งแต่การคัดสรรวัตถุดิบท้องถิ่น ไปจนถึงการปรุงรสชาติดั้งเดิมที่ไม่เคยประนีประนอมต่อคุณภาพ ความตั้งใจสูงสุดคือการรักษามรดกทางวัฒนธรรมอาหารให้คงอยู่ พร้อมยกระดับกระบวนการผลิตสู่มาตรฐานสากล เพื่อส่งมอบผลิตภัณฑ์ที่เปี่ยมไปด้วยความใส่ใจสู่ผู้บริโภคยุคใหม่</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services section section--alt" id="services">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag" data-i18n="servTag">ธุรกิจของเรา</span>
+        <h2 class="section__title" data-i18n="servTitle">4 กลุ่มธุรกิจหลัก</h2>
+        <p class="section__subtitle" data-i18n="servSub">ความหลากหลายที่หยั่งรากจากพัทลุง เติบโตสู่ระดับประเทศ</p>
+        <div class="section__divider"></div>
+      </div>
+      <div class="services__grid">
+
+        <!-- Card 1: ตำรับแม่ฉวี -->
+        <div class="service-card">
+          <div class="service-card__icon service-card__icon--1">
+            <i class="fas fa-bowl-rice"></i>
+          </div>
+          <div class="service-card__badge" data-i18n="s1Badge">ตำรับแม่ฉวี</div>
+          <h3 class="service-card__title" data-i18n="s1Title">อาหารท้องถิ่นภาคใต้</h3>
+          <p class="service-card__desc" data-i18n="s1Desc">
+            ผลิตและจัดจำหน่ายอาหารใต้ดั้งเดิมที่ยกระดับด้วยมาตรฐานการผลิตสมัยใหม่ รสชาติแท้จากภูมิปัญญาท้องถิ่น
+          </p>
+          <ul class="service-card__list">
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="s1Li1">เต้าคั่วตำรับดั้งเดิม</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="s1Li2">กระบวนการผลิตได้มาตรฐาน</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="s1Li3">อาหารใต้แปรรูปคุณภาพสูง</span></li>
+          </ul>
+          <div class="service-card__shop-btns">
+            <a href="https://th.shp.ee/hs9fjhg1" target="_blank" rel="noopener noreferrer" class="shop-btn shop-btn--shopee">
+              <svg class="shop-btn__logo" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a4 4 0 0 1 4 4H8a4 4 0 0 1 4-4zm-7 5h14l-1.5 11a1 1 0 0 1-1 .9H7.5a1 1 0 0 1-1-.9L5 7zm4 4v4h2v-4H9zm4 0v4h2v-4h-2z"/></svg>
+              Shopee
+            </a>
+            <a href="https://vt.tiktok.com/ZSbGe5XCX/?page=TikTokShop" target="_blank" rel="noopener noreferrer" class="shop-btn shop-btn--tiktok">
+              <i class="fab fa-tiktok"></i> TikTok
+            </a>
+            <a href="https://thaimart.com/s/%E0%B8%95%E0%B8%B3%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%89%E0%B8%A7%E0%B8%B5-%E0%B9%80%E0%B8%95%E0%B9%89%E0%B8%B2%E0%B8%84%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%84-0YqHGk" target="_blank" rel="noopener noreferrer" class="shop-btn shop-btn--thaimart">
+              <svg class="shop-btn__logo shop-btn__logo--elephant" viewBox="0 0 64 64" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 10c-3.5 0-6.5 1.2-8.8 3.2C38.2 9.2 33.2 6 27 6 16.5 6 8 14.5 8 25c0 5 1.8 9.5 4.8 13C11 39.8 10 42 10 44.5c0 5.5 4.5 9.5 10 9.5h2v5h5v-5h11v5h5v-5h2c5.5 0 10-4 10-9.5V26c0-8.8-2.5-16-10-16zm-1.5 5c3.5 0 5.5 4 5.5 11v18.5c0 2.5-2 4.5-4.5 4.5H20c-2.5 0-4.5-2-4.5-4.5 0-1.8 0.8-3.5 2-4.8l2.5-2.5-1.8-2.8C16.5 31.5 15.5 28.5 15.5 25c0-7.5 6-14 12.5-14 5.5 0 10 3.2 12 8l1.5 3.2 3-1.5c1.5-0.8 2.8-1.2 4-1.7z"/>
+                <circle cx="25" cy="26" r="2.5"/>
+                <path d="M38 20c-1-2.5-3-4.5-5.5-5l-0.8 3.5c1.5 0.5 2.5 1.5 3 3L38 20z"/>
+              </svg>
+              Thaimart
+            </a>
+            <a href="https://www.facebook.com/share/19nQqpkRvB/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="shop-btn shop-btn--fb">
+              <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Sunny Grove -->
+        <div class="service-card service-card--featured">
+          <div class="service-card__icon service-card__icon--2">
+            <i class="fas fa-apple-whole"></i>
+          </div>
+          <div class="service-card__badge">Sunny Grove</div>
+          <h3 class="service-card__title" data-i18n="s2Title">ผลผลิตเกษตรพรีเมียม</h3>
+          <p class="service-card__desc" data-i18n="s2Desc">
+            คัดสรรและจัดจำหน่ายผลไม้สดและวัตถุดิบคุณภาพสูงจากแหล่งปลูก ตรงจากสวนถึงมือผู้บริโภค
+          </p>
+          <ul class="service-card__list">
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="s2Li1">อะโวคาโดสายพันธุ์ 034 &amp; Hass</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="s2Li2">ลูกพลับแห้งคุณภาพสูง</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="s2Li3">รากบัวและผักพรีเมียม</span></li>
+          </ul>
+          <div class="service-card__shop-btns">
+            <a href="https://vt.tiktok.com/ZSbGeqS6s/?page=TikTokShop" target="_blank" rel="noopener noreferrer" class="shop-btn shop-btn--tiktok">
+              <i class="fab fa-tiktok"></i> Official TikTok
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Future Ventures R&D -->
+        <div class="service-card">
+          <div class="service-card__icon service-card__icon--3">
+            <i class="fas fa-flask"></i>
+          </div>
+          <div class="service-card__badge">Future Ventures</div>
+          <h3 class="service-card__title" data-i18n="s3Title">วิจัยและพัฒนา (R&amp;D)</h3>
+          <p class="service-card__desc" data-i18n="s3Desc">
+            การพัฒนาผลิตภัณฑ์มูลค่าสูงด้วยนวัตกรรมสมัยใหม่ เพื่อสร้างมูลค่าเพิ่มให้วัตถุดิบท้องถิ่น
+          </p>
+          <ul class="service-card__list">
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="s3Li1">นวัตกรรมผงบีทรูทสกัด</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="s3Li2">Micro-winery ไวน์บ่มสเกลเล็ก</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="s3Li3">พัฒนาผลิตภัณฑ์ใหม่ต่อเนื่อง</span></li>
+          </ul>
+        </div>
+
+        <!-- Card 4: Local Empowerment -->
+        <div class="service-card">
+          <div class="service-card__icon service-card__icon--4">
+            <i class="fas fa-hands-holding-heart"></i>
+          </div>
+          <div class="service-card__badge" data-i18n="s4Badge">Local Empowerment</div>
+          <h3 class="service-card__title" data-i18n="s4Title">สนับสนุนชุมชน</h3>
+          <p class="service-card__desc" data-i18n="s4Desc">
+            รับซื้อผลผลิตจากเกษตรกรภาคใต้และจังหวัดพัทลุง เพื่อกระจายรายได้และสร้างงานในท้องถิ่นอย่างยั่งยืน
+          </p>
+          <ul class="service-card__list">
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="s4Li1">รับซื้อมังคุดจากสวนท้องถิ่น</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="s4Li2">รับซื้อสับปะรดราคายุติธรรม</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-i18n="s4Li3">สร้างงานและกระจายรายได้</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BENEFITS ========== -->
+  <section class="benefits section" id="benefits">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag" data-i18n="benTag">จุดเด่น</span>
+        <h2 class="section__title" data-i18n="benTitle">ประโยชน์จากการเลือกสินค้าและบริการของเรา</h2>
+        <div class="section__divider"></div>
+      </div>
+      <div class="benefits__grid">
+        <div class="benefit-item">
+          <div class="benefit-item__icon"><i class="fas fa-shield-halved"></i></div>
+          <div class="benefit-item__text">
+            <h4 data-i18n="ben1Title">มาตรฐานการผลิตที่ปลอดภัย</h4>
+            <p data-i18n="ben1Desc">ผ่านกระบวนการผลิตที่ได้มาตรฐาน ปลอดภัย และตรวจสอบได้ทุกขั้นตอน</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-item__icon"><i class="fas fa-tractor"></i></div>
+          <div class="benefit-item__text">
+            <h4 data-i18n="ben2Title">วัตถุดิบตรงจากแหล่งปลูก</h4>
+            <p data-i18n="ben2Desc">คัดสรรวัตถุดิบสดใหม่โดยตรงจากเกษตรกรในพื้นที่ ไม่ผ่านคนกลางหลายชั้น</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-item__icon"><i class="fas fa-star"></i></div>
+          <div class="benefit-item__text">
+            <h4 data-i18n="ben3Title">คุณภาพระดับพรีเมียม</h4>
+            <p data-i18n="ben3Desc">คัดเกรดผลผลิตอย่างเข้มงวด เพื่อให้ผู้บริโภคได้รับสินค้าที่ดีที่สุดเสมอ</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-item__icon"><i class="fas fa-leaf"></i></div>
+          <div class="benefit-item__text">
+            <h4 data-i18n="ben4Title">เป็นมิตรกับสิ่งแวดล้อม</h4>
+            <p data-i18n="ben4Desc">ดำเนินธุรกิจด้วยแนวคิด Sustainable เลือกใช้บรรจุภัณฑ์ที่เป็นมิตรต่อสิ่งแวดล้อม</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-item__icon"><i class="fas fa-heart"></i></div>
+          <div class="benefit-item__text">
+            <h4 data-i18n="ben5Title">สนับสนุนเกษตรกรไทย</h4>
+            <p data-i18n="ben5Desc">ทุกการซื้อช่วยสร้างรายได้ให้เกษตรกรท้องถิ่นภาคใต้ได้อย่างตรงถึงมือ</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-item__icon"><i class="fas fa-microscope"></i></div>
+          <div class="benefit-item__text">
+            <h4 data-i18n="ben6Title">นวัตกรรมและการพัฒนาอย่างต่อเนื่อง</h4>
+            <p data-i18n="ben6Desc">ลงทุนใน R&amp;D เพื่อสร้างผลิตภัณฑ์ใหม่และเพิ่มมูลค่าวัตถุดิบท้องถิ่นอยู่เสมอ</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-item__icon"><i class="fas fa-map-location-dot"></i></div>
+          <div class="benefit-item__text">
+            <h4 data-i18n="ben7Title">รากฐานจากพัทลุง ส่งทั่วไทย</h4>
+            <p data-i18n="ben7Desc">ฐานการผลิตและจัดส่งจากจังหวัดพัทลุง พร้อมขยายการจัดจำหน่ายทั่วประเทศ</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-item__icon"><i class="fas fa-handshake"></i></div>
+          <div class="benefit-item__text">
+            <h4 data-i18n="ben8Title">พันธมิตรที่ไว้วางใจได้</h4>
+            <p data-i18n="ben8Desc">ดำเนินธุรกิจด้วยความโปร่งใส ซื่อสัตย์ และมุ่งมั่นสร้างความสัมพันธ์ระยะยาว</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY CHOOSE US ========== -->
+  <section class="why-us section section--alt" id="why-us">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag" data-i18n="whyTag">ทำไมต้องเลือกเรา</span>
+        <h2 class="section__title" data-i18n="whyTitle">เลือก บริษัท ศิริวัตร์เมธานินท์ กรุ๊ป จำกัด ดีอย่างไร?</h2>
+        <div class="section__divider"></div>
+      </div>
+      <div class="why-us__grid">
+        <div class="why-card">
+          <div class="why-card__number">01</div>
+          <div class="why-card__icon"><i class="fas fa-award"></i></div>
+          <h3 class="why-card__title" data-i18n="why1Title">ผู้นำด้านอาหารและเกษตรภาคใต้</h3>
+          <p class="why-card__desc" data-i18n="why1Desc">เรามีความเชี่ยวชาญเฉพาะในผลิตภัณฑ์และวัตถุดิบภาคใต้ ด้วยความเข้าใจในพื้นที่และเครือข่ายเกษตรกรที่แน่นแฟ้น</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__number">02</div>
+          <div class="why-card__icon"><i class="fas fa-recycle"></i></div>
+          <h3 class="why-card__title" data-i18n="why2Title">ธุรกิจที่ยั่งยืน ครบวงจร</h3>
+          <p class="why-card__desc" data-i18n="why2Desc">ครอบคลุมตั้งแต่ต้นน้ำ (รับซื้อจากเกษตรกร) ถึงปลายน้ำ (ผลิต แปรรูป จัดจำหน่าย) ในกลุ่มธุรกิจเดียว</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__number">03</div>
+          <div class="why-card__icon"><i class="fas fa-lightbulb"></i></div>
+          <h3 class="why-card__title" data-i18n="why3Title">นวัตกรรมควบคู่ภูมิปัญญา</h3>
+          <p class="why-card__desc" data-i18n="why3Desc">ผสมผสานองค์ความรู้ดั้งเดิมของท้องถิ่นเข้ากับเทคโนโลยีและกระบวนการผลิตสมัยใหม่ สร้างผลิตภัณฑ์ที่มีเอกลักษณ์ไม่เหมือนใคร</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT PROCESS ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag" data-i18n="ctaTag">ติดต่อเรา</span>
+        <h2 class="section__title" data-i18n="ctaTitle">เริ่มต้นร่วมงานกับเราง่ายๆ</h2>
+        <div class="section__divider"></div>
+      </div>
+
+      <div class="contact__layout">
+        <!-- Process Steps -->
+        <div class="contact__process">
+          <h3 class="contact__process-title" data-i18n="ctaProcessTitle">ขั้นตอนการติดต่อ</h3>
+          <div class="steps">
+            <div class="step">
+              <div class="step__bubble">1</div>
+              <div class="step__line"></div>
+              <div class="step__body">
+                <h4 data-i18n="step1Title">แจ้งความประสงค์</h4>
+                <p data-i18n="step1Desc">ติดต่อเราเพื่อแจ้งความสนใจ ไม่ว่าจะเป็นการสั่งซื้อสินค้า ความร่วมมือทางธุรกิจ หรือการรับซื้อผลผลิต</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__bubble">2</div>
+              <div class="step__line"></div>
+              <div class="step__body">
+                <h4 data-i18n="step2Title">ระบุรายละเอียด</h4>
+                <p data-i18n="step2Desc">แจ้งข้อมูลที่ต้องการ เช่น ประเภทสินค้า ปริมาณ ช่องทางการจัดส่ง หรือรายละเอียดความร่วมมือ</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__bubble">3</div>
+              <div class="step__body">
+                <h4 data-i18n="step3Title">เริ่มดำเนินการ</h4>
+                <p data-i18n="step3Desc">ทีมงานของเราจะติดต่อกลับและจัดส่งสินค้า หรือเริ่มดำเนินการตามที่ตกลงไว้ในระยะเวลาที่กำหนด</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact__info">
+          <h3 class="contact__info-title" data-i18n="ctaInfoTitle">ข้อมูลติดต่อ</h3>
+          <div class="contact__cards">
+            <div class="contact-card">
+              <div class="contact-card__icon"><i class="fas fa-location-dot"></i></div>
+              <div class="contact-card__body">
+                <h4 data-i18n="contactAddrLabel">ที่อยู่สำนักงานใหญ่</h4>
+                <p data-i18n="contactAddrVal">115/1 หมู่ที่ 2 ตำบลท่าแค<br />อำเภอเมืองพัทลุง จังหวัดพัทลุง 93000</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card__icon"><i class="fas fa-phone"></i></div>
+              <div class="contact-card__body">
+                <h4 data-i18n="contactPhoneLabel">โทรศัพท์</h4>
+                <p>091-909-8902</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card__icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-card__body">
+                <h4 data-i18n="contactEmailLabel">อีเมล</h4>
+                <p>contact.siriwatmedhanin@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card__icon contact-card__icon--fb"><i class="fab fa-facebook-f"></i></div>
+              <div class="contact-card__body">
+                <h4 data-i18n="contactFbLabel">Facebook</h4>
+                <p><a href="https://www.facebook.com/share/1FGMbjt1ME/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="contact-link">Siriwatmedhanin Group</a></p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card__icon"><i class="fas fa-file-invoice"></i></div>
+              <div class="contact-card__body">
+                <h4 data-i18n="contactTaxLabel">เลขประจำตัวผู้เสียภาษี</h4>
+                <p>0935569001087</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ช่องทางสั่งซื้อออนไลน์ -->
+          <div class="shop-online-box">
+            <h3 class="shop-online-box__title" data-i18n="shopOnlineTitle">ช่องทางการสั่งซื้อออนไลน์</h3>
+            <div class="shop-online-box__divider"></div>
+
+            <div class="shop-online-brand">
+              <span class="shop-online-brand__name">ตำรับแม่ฉวี</span>
+              <div class="shop-online-brand__btns">
+                <a href="https://th.shp.ee/hs9fjhg1" target="_blank" rel="noopener noreferrer" class="shop-btn shop-btn--shopee">
+                  <svg class="shop-btn__logo" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a4 4 0 0 1 4 4H8a4 4 0 0 1 4-4zm-7 5h14l-1.5 11a1 1 0 0 1-1 .9H7.5a1 1 0 0 1-1-.9L5 7zm4 4v4h2v-4H9zm4 0v4h2v-4h-2z"/></svg>
+                  Shopee
+                </a>
+                <a href="https://vt.tiktok.com/ZSbGe5XCX/?page=TikTokShop" target="_blank" rel="noopener noreferrer" class="shop-btn shop-btn--tiktok">
+                  <i class="fab fa-tiktok"></i> TikTok Shop
+                </a>
+                <a href="https://thaimart.com/s/%E0%B8%95%E0%B8%B3%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%89%E0%B8%A7%E0%B8%B5-%E0%B9%80%E0%B8%95%E0%B9%89%E0%B8%B2%E0%B8%84%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%84-0YqHGk" target="_blank" rel="noopener noreferrer" class="shop-btn shop-btn--thaimart">
+                  <svg class="shop-btn__logo shop-btn__logo--elephant" viewBox="0 0 64 64" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 10c-3.5 0-6.5 1.2-8.8 3.2C38.2 9.2 33.2 6 27 6 16.5 6 8 14.5 8 25c0 5 1.8 9.5 4.8 13C11 39.8 10 42 10 44.5c0 5.5 4.5 9.5 10 9.5h2v5h5v-5h11v5h5v-5h2c5.5 0 10-4 10-9.5V26c0-8.8-2.5-16-10-16zm-1.5 5c3.5 0 5.5 4 5.5 11v18.5c0 2.5-2 4.5-4.5 4.5H20c-2.5 0-4.5-2-4.5-4.5 0-1.8 0.8-3.5 2-4.8l2.5-2.5-1.8-2.8C16.5 31.5 15.5 28.5 15.5 25c0-7.5 6-14 12.5-14 5.5 0 10 3.2 12 8l1.5 3.2 3-1.5c1.5-0.8 2.8-1.2 4-1.7z"/>
+                    <circle cx="25" cy="26" r="2.5"/>
+                    <path d="M38 20c-1-2.5-3-4.5-5.5-5l-0.8 3.5c1.5 0.5 2.5 1.5 3 3L38 20z"/>
+                  </svg>
+                  Thaimart
+                </a>
+                <a href="https://www.facebook.com/share/19nQqpkRvB/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="shop-btn shop-btn--fb-shop">
+                  <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+              </div>
+            </div>
+
+            <div class="shop-online-brand">
+              <span class="shop-online-brand__name">Sunny Grove</span>
+              <div class="shop-online-brand__btns">
+                <a href="https://vt.tiktok.com/ZSbGeqS6s/?page=TikTokShop" target="_blank" rel="noopener noreferrer" class="shop-btn shop-btn--tiktok">
+                  <i class="fab fa-tiktok"></i> TikTok Shop
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <div class="logo-mark logo-mark--sm">
+              <div class="logo-circle">
+                <img src="assets/images/logo-smg-bg1.png" alt="SMG Logo" class="logo-img" />
+              </div>
+            </div>
+            <div>
+              <div class="footer__logo-th">บริษัท ศิริวัตร์เมธานินท์ กรุ๊ป จำกัด</div>
+              <div class="footer__logo-en">SIRIWATMEDHANIN CO., LTD.</div>
+            </div>
+          </div>
+          <p class="footer__tagline" data-i18n="footerTagline">
+            บูรณาการธุรกิจอาหาร เกษตร และนวัตกรรม<br />
+            เพื่อชุมชนและสังคมที่ยั่งยืน
+          </p>
+        </div>
+
+        <div class="footer__links-col">
+          <h4 data-i18n="footerBizCol">ธุรกิจของเรา</h4>
+          <ul>
+            <li><a href="#services" data-i18n="footerBiz1">ตำรับแม่ฉวี — อาหารใต้</a></li>
+            <li><a href="#services" data-i18n="footerBiz2">Sunny Grove — เกษตรพรีเมียม</a></li>
+            <li><a href="#services" data-i18n="footerBiz3">Future Ventures — R&amp;D</a></li>
+            <li><a href="#services" data-i18n="footerBiz4">Local Empowerment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links-col">
+          <h4 data-i18n="footerMenuCol">เมนู</h4>
+          <ul>
+            <li><a href="#about"    data-i18n="navAbout">เกี่ยวกับเรา</a></li>
+            <li><a href="#services" data-i18n="navServices">ธุรกิจของเรา</a></li>
+            <li><a href="#benefits" data-i18n="navBenefits">จุดเด่น</a></li>
+            <li><a href="#contact"  data-i18n="navContact">ติดต่อเรา</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact-col">
+          <h4 data-i18n="footerContactCol">ติดต่อ</h4>
+          <p><i class="fas fa-location-dot"></i> <span data-i18n="footerAddr">115/1 ม.2 ต.ท่าแค อ.เมือง จ.พัทลุง 93000</span></p>
+          <p><i class="fas fa-phone"></i> 091-909-8902</p>
+          <p><i class="fas fa-envelope"></i> contact.siriwatmedhanin@gmail.com</p>
+          <p><i class="fab fa-facebook-f"></i> <a href="https://www.facebook.com/share/1FGMbjt1ME/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="footer__social-link">Siriwatmedhanin Group</a></p>
+          <p><i class="fas fa-file-invoice"></i> <span data-i18n="footerTaxLabel">เลขภาษี:</span> 0935569001087</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p data-i18n="footerCopyright">&copy; 2026 บริษัท ศิริวัตร์เมธานินท์ กรุ๊ป จำกัด. สงวนลิขสิทธิ์ทุกประการ.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ========== FLOATING CONTACT ========== -->
+  <div class="float-contact" id="floatContact">
+    <div class="float-contact__items">
+      <!-- Phone -->
+      <a href="tel:0919098902" class="float-item float-item--phone" aria-label="โทรศัพท์">
+        <i class="fas fa-phone"></i>
+        <span class="float-item__tooltip">091-909-8902</span>
+      </a>
+      <!-- Email -->
+      <a href="mailto:contact.siriwatmedhanin@gmail.com" class="float-item float-item--email" aria-label="อีเมล">
+        <i class="fas fa-envelope"></i>
+        <span class="float-item__tooltip">contact.siriwatmedhanin@gmail.com</span>
+      </a>
+      <!-- LINE — เว้นไว้ก่อน -->
+      <!-- <a href="#" class="float-item float-item--line" aria-label="LINE">
+        <i class="fab fa-line"></i>
+        <span class="float-item__tooltip">LINE</span>
+      </a> -->
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/share/1FGMbjt1ME/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="float-item float-item--fb" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+        <span class="float-item__tooltip">Facebook</span>
+      </a>
+      <!-- Messenger -->
+      <a href="https://m.me/" class="float-item float-item--messenger" aria-label="Messenger">
+        <i class="fab fa-facebook-messenger"></i>
+        <span class="float-item__tooltip">Messenger</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
