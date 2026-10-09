@@ -5,7 +5,7 @@
 const translations = {
   th: {
     brandTh:        'บริษัท ศิริวัตร์เมธานินท์ กรุ๊ป จำกัด',
-    brandEn:        'SIRIWATMEDHANIN CO., LTD.',
+    brandEn:        'SIRIWATMEDHANIN GROUP CO., LTD.',
 
     navAbout:       'เกี่ยวกับเรา',
     navServices:    'ธุรกิจของเรา',
@@ -15,7 +15,7 @@ const translations = {
 
     heroEyebrow:    'ยินดีต้อนรับสู่',
     heroTitle:      'บริษัท ศิริวัตร์เมธานินท์ กรุ๊ป จำกัด',
-    heroSubtitle:   'SIRIWATMEDHANIN CO., LTD.',
+    heroSubtitle:   'SIRIWATMEDHANIN GROUP CO., LTD.',
     heroDesc:       'กลุ่มธุรกิจที่บูรณาการความหลากหลาย — จากรสชาติดั้งเดิมของภาคใต้<br/>สู่ผลผลิตเกษตรพรีเมียม และนวัตกรรมการแปรรูปสู่อนาคต',
     heroCta1:       'ดูธุรกิจของเรา',
     heroCta2:       'ติดต่อเรา',
@@ -111,7 +111,7 @@ const translations = {
 
   en: {
     brandTh:        'Siriwatmedhanin Group',
-    brandEn:        'SIRIWATMEDHANIN CO., LTD.',
+    brandEn:        'SIRIWATMEDHANIN GROUP CO., LTD.',
 
     navAbout:       'About Us',
     navServices:    'Our Business',
@@ -120,14 +120,14 @@ const translations = {
     navContact:     'Contact',
 
     heroEyebrow:    'Welcome to',
-    heroTitle:      'SIRIWATMEDHANIN CO., LTD.',
-    heroSubtitle:   'SIRIWATMEDHANIN CO., LTD.',
+    heroTitle:      'SIRIWATMEDHANIN GROUP CO., LTD.',
+    heroSubtitle:   'SIRIWATMEDHANIN GROUP CO., LTD.',
     heroDesc:       'An integrated business group rooted in southern Thai heritage — from traditional cuisine to premium agriculture and innovative R&D.',
     heroCta1:       'Our Business',
     heroCta2:       'Contact Us',
 
     aboutTag:       'About Us',
-    aboutTitle:     'SIRIWATMEDHANIN CO., LTD.',
+    aboutTitle:     'SIRIWATMEDHANIN GROUP CO., LTD.',
     aboutLead:      'We are a business group founded on the heritage of southern Thailand, dedicated to elevating local products to international standards.',
     aboutP1:        'From Phatthalung to nationwide markets, we operate across 4 core business units — from traditional southern cuisine and premium agricultural produce to R&D innovation and local farmer empowerment, building a sustainable economic ecosystem.',
     statBiz:        'Business Units',
@@ -158,7 +158,7 @@ const translations = {
     footerContactCol:'Contact',
     footerAddr:     '115/1 Moo 2, Tha Khae, Mueang Phatthalung 93000',
     footerTaxLabel: 'Tax ID:',
-    footerCopyright:'© 2026 SIRIWATMEDHANIN CO., LTD. All rights reserved.',
+    footerCopyright:'© 2026 SIRIWATMEDHANIN GROUP CO., LTD. All rights reserved.',
 
     // Services
     s1Badge:'Tamrab Mae Chawi', s1Title:'Southern Thai Local Food', s1Desc:'Producing and distributing traditional southern cuisine elevated with modern production standards.',
@@ -217,7 +217,7 @@ const translations = {
 
   zh: {
     brandTh:        'Siriwatmedhanin集团',
-    brandEn:        'SIRIWATMEDHANIN CO., LTD.',
+    brandEn:        'SIRIWATMEDHANIN GROUP CO., LTD.',
 
     navAbout:       '关于我们',
     navServices:    '业务范围',
@@ -227,7 +227,7 @@ const translations = {
 
     heroEyebrow:    '欢迎来到',
     heroTitle:      'Siriwatmedhanin集团',
-    heroSubtitle:   'SIRIWATMEDHANIN CO., LTD.',
+    heroSubtitle:   'SIRIWATMEDHANIN GROUP CO., LTD.',
     heroDesc:       '一个融合多元化业务的集团 — 从泰国南部的传统美食，到优质农业产品，再到创新研发，共创可持续发展未来。',
     heroCta1:       '了解我们的业务',
     heroCta2:       '联系我们',
