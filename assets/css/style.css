@@ -766,8 +766,8 @@ ul { list-style: none; }
   opacity: 0.14;
   pointer-events: none;
   mix-blend-mode: screen;
-  animation: guillocheHolo 14s ease-in-out infinite alternate-reverse;
-  filter: brightness(1.5) contrast(0.8) saturate(0.3);
+  animation: none;
+  filter: brightness(2.0) contrast(0.6) saturate(0) grayscale(1);
   z-index: 0;
 }
 
@@ -1472,11 +1472,11 @@ ul { list-style: none; }
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  opacity: 0.22;
+  opacity: 0.18;
   pointer-events: none;
   mix-blend-mode: screen;
-  animation: guillocheHolo 12s ease-in-out infinite alternate;
-  filter: brightness(1.5) contrast(0.8) saturate(0.3);
+  animation: none;
+  filter: brightness(2.0) contrast(0.6) saturate(0) grayscale(1);
 }
 
 @keyframes guillocheHolo {
@@ -1757,7 +1757,8 @@ ul { list-style: none; }
     min-height: unset !important;
     top: -10% !important;
     right: -20% !important;
-    opacity: 0.50 !important;
+    opacity: 0.15 !important;
+    animation: none !important;
   }
 
   .footer::before {
@@ -1765,7 +1766,8 @@ ul { list-style: none; }
     height: 260px !important;
     min-width: unset !important;
     min-height: unset !important;
-    opacity: 0.40 !important;
+    opacity: 0.12 !important;
+    animation: none !important;
   }
 }
 
@@ -2414,4 +2416,60 @@ ul { list-style: none; }
 .shop-btn__logo--elephant {
   width: 16px;
   height: 16px;
+}
+
+/* ===================================================
+   LOGO SMG_11 — วงกลม contain (ไม่ตัดขาด)
+   =================================================== */
+
+.logo-mark {
+  width: 52px !important;
+  height: 52px !important;
+  background: var(--color-white) !important;
+  border-radius: 50% !important;
+  padding: 5px !important;
+  box-shadow: 0 2px 10px rgba(109,31,61,0.25) !important;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.logo-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.logo-circle .logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0;
+  display: block;
+}
+
+/* Footer */
+.logo-mark--sm {
+  width: 44px !important;
+  height: 44px !important;
+  background: var(--color-white) !important;
+  border-radius: 50% !important;
+  padding: 4px !important;
+  overflow: hidden;
+}
+
+.logo-mark--sm .logo-circle {
+  border-radius: 50%;
+}
+
+.logo-mark--sm .logo-img {
+  object-fit: contain;
+  border-radius: 0;
 }
