@@ -1683,9 +1683,38 @@ ul { list-style: none; }
     gap: 12px;
   }
 
-  /* ซ่อน lang-switcher ออกจาก navbar flow บน mobile */
+  /* Lang switcher บน mobile — แสดงใน navbar แต่ย่อขนาด */
   .navbar .lang-switcher {
+    display: flex !important;
+    background: rgba(255,255,255,0.12) !important;
+    border: 1px solid rgba(255,255,255,0.2) !important;
+    box-shadow: none !important;
+    position: static !important;
+    bottom: auto !important;
+    right: auto !important;
+    z-index: auto !important;
+    padding: 3px !important;
+    gap: 2px !important;
+  }
+
+  .navbar.scrolled .navbar .lang-switcher {
+    background: rgba(109,31,61,0.06) !important;
+    border-color: var(--color-border) !important;
+  }
+
+  /* ซ่อน lang-code บน mobile เหลือแค่ flag */
+  .navbar .lang-code {
     display: none !important;
+  }
+
+  /* ปรับ padding ปุ่มให้แน่น */
+  .navbar .lang-btn {
+    padding: 4px 5px !important;
+  }
+
+  .navbar .flag-circle {
+    width: 22px !important;
+    height: 22px !important;
   }
 
   /* Section header */
