@@ -14,6 +14,18 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://siriwatmedhanin.com/" />
+
+  <!-- Clean fbclid from URL -->
+  <script>
+    (function(){
+      const url = new URL(window.location.href);
+      ['fbclid','utm_source','utm_medium','utm_campaign','utm_content','utm_term','mibextid'].forEach(p => url.searchParams.delete(p));
+      if (url.href !== window.location.href) window.history.replaceState({}, '', url.href);
+    })();
+  </script>
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>

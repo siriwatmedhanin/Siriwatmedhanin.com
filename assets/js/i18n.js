@@ -98,11 +98,11 @@ const translations = {
 
     // Executive Team
     execTitle:'ทีมผู้บริหาร', execPhotoLabel:'ภาพพอร์ตเทรต',
-    exec1Quote:'"การเติบโตที่ยั่งยืน คือการนำนวัตกรรมมายกระดับคุณค่าดั้งเดิม และก้าวไปข้างหน้าพร้อมกับชุมชน"',
+    exec1Quote:'&ldquo;การเติบโตที่ยั่งยืน คือการนำนวัตกรรมมายกระดับคุณค่าดั้งเดิม และก้าวไปข้างหน้าพร้อมกับชุมชน&rdquo;',
     exec1Name:'คุณณัฐชาธรณ์ ศิริวัตร์เมธานินท์', exec1Pos:'Founder &amp; Director',
     exec1Tag:'บริหาร · นวัตกรรม · ยุทธศาสตร์องค์กร',
     exec1Vision:'ในฐานะผู้ก่อตั้ง ศิริวัตร์เมธานินท์ กรุ๊ป คุณณัฐชาธรณ์คือผู้ขับเคลื่อนองค์กรด้วยแนวคิด Digital-first โดยผสานความเชี่ยวชาญด้านเทคโนโลยีและการสื่อสารเชิงกลยุทธ์เข้ากับการบริหารจัดการธุรกิจและระบบคลังสินค้ายุคใหม่ ด้วยเป้าหมายที่ต้องการนำมรดกทางวัฒนธรรมและผลผลิตทางการเกษตรของท้องถิ่นก้าวสู่มาตรฐานที่สูงขึ้น คุณณัฐชาธรณ์จึงให้ความสำคัญกับการริเริ่มนวัตกรรมใหม่ๆ (R&D) การสร้างแบรนด์ที่แข็งแกร่ง ควบคู่กับปณิธานที่แน่วแน่ในการสนับสนุนเกษตรกรภาคใต้และกระจายรายได้สู่ชุมชน เพื่อสร้างรากฐานธุรกิจที่เติบโตอย่างมั่นคงและยั่งยืน',
-    exec2Quote:'"รสมือที่แท้จริง คือการรักษารากเหง้าของวัตถุดิบ และส่งต่อความใส่ใจจากรุ่นสู่รุ่น"',
+    exec2Quote:'&ldquo;รสมือที่แท้จริง คือการรักษารากเหง้าของวัตถุดิบ และส่งต่อความใส่ใจจากรุ่นสู่รุ่น&rdquo;',
     exec2Name:'คุณวิไลลักษณ์ เพชรคง', exec2Pos:'Co-Founder &amp; Heritage Director',
     exec2Tag:'สืบสานภูมิปัญญา · มรดกอาหาร · ควบคุมคุณภาพ',
     exec2Vision:'ในฐานะหัวใจสำคัญของแบรนด์ "ตำรับแม่ฉวี" คุณวิไลลักษณ์คือเสาหลักในการสืบสานและควบคุมคุณภาพของภูมิปัญญาอาหารใต้อย่างแท้จริง ด้วยความมุ่งมั่นและความพิถีพิถันในทุกขั้นตอน ตั้งแต่การคัดสรรวัตถุดิบท้องถิ่น ไปจนถึงการปรุงรสชาติดั้งเดิมที่ไม่เคยประนีประนอมต่อคุณภาพ ความตั้งใจสูงสุดคือการรักษามรดกทางวัฒนธรรมอาหารให้คงอยู่ พร้อมยกระดับกระบวนการผลิตสู่มาตรฐานสากล',
@@ -203,11 +203,11 @@ const translations = {
 
     // Executive Team
     execTitle:'Executive Team', execPhotoLabel:'Portrait Photo',
-    exec1Quote:'"Sustainable growth means using innovation to elevate traditional values — and moving forward together with the community."',
+    exec1Quote:'&ldquo;Sustainable growth means using innovation to elevate traditional values — and moving forward together with the community.&rdquo;',
     exec1Name:'Mr. Natchathon Sirivaddhamedhanin', exec1Pos:'Founder &amp; Director',
     exec1Tag:'Management · Innovation · Corporate Strategy',
     exec1Vision:'As the founder of Siriwatmedhanin Group, Nattachathorn drives the organization with a Digital-first mindset, combining expertise in technology and strategic communications with modern business management and warehouse systems. His goal is to elevate the cultural heritage and agricultural produce of the local community to higher standards through R&D innovation and strong brand building, while empowering southern farmers and distributing income to communities.',
-    exec2Quote:'"True craftsmanship means preserving the essence of ingredients — and passing on care from generation to generation."',
+    exec2Quote:'&ldquo;True craftsmanship means preserving the essence of ingredients — and passing on care from generation to generation.&rdquo;',
     exec2Name:'Ms. Wilailuk Phetkong', exec2Pos:'Co-Founder &amp; Heritage Director',
     exec2Tag:'Cultural Heritage · Food Legacy · Quality Control',
     exec2Vision:'As the heart of the "Tamrab Mae Chawi" brand, Wilailak is the cornerstone of preserving and quality-controlling authentic southern Thai culinary wisdom. With dedication and meticulous attention at every step — from sourcing local ingredients to crafting traditional flavors — her ultimate goal is to preserve the cultural food heritage while elevating production to international standards.',
@@ -308,11 +308,11 @@ const translations = {
 
     // Executive Team
     execTitle:'管理团队', execPhotoLabel:'肖像照片',
-    exec1Quote:'"可持续发展意味着用创新提升传统价值，并与社区共同前进。"',
+    exec1Quote:'&ldquo;可持续发展意味着用创新提升传统价值，并与社区共同前进。&rdquo;',
     exec1Name:'Mr. Natchathon Sirivaddhamedhanin', exec1Pos:'创始人兼总监',
     exec1Tag:'管理 · 创新 · 企业战略',
     exec1Vision:'作为 Siriwatmedhanin 集团的创始人，纳塔查通以数字优先的理念驱动组织，将技术和战略传播专业知识与现代业务管理和仓储系统相结合。他的目标是通过研发创新和品牌建设，将当地的文化遗产和农业产品提升到更高标准，同时坚定支持南部农民，将收入分配给社区。',
-    exec2Quote:'"真正的手艺在于保留食材的本质，并将这份用心代代相传。"',
+    exec2Quote:'&ldquo;真正的手艺在于保留食材的本质，并将这份用心代代相传。&rdquo;',
     exec2Name:'Ms. Wilailuk Phetkong', exec2Pos:'联合创始人兼文化遗产总监',
     exec2Tag:'文化传承 · 饮食遗产 · 质量控制',
     exec2Vision:'作为"Tamrab Mae Chawi"品牌的核心，威莱拉克是传承和质量控制正宗南部泰国烹饪智慧的基石。从采购本地食材到调制传统口味，她的最终目标是保护饮食文化遗产，同时将生产提升至国际标准。',
