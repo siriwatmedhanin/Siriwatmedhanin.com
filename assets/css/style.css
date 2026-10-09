@@ -2483,7 +2483,8 @@ ul { list-style: none; }
   display: block;
 }
 
-/* Sunny Grove icon background — เขียวธรรมชาติเข้ากับแบรนด์เกษตร */
+/* Sunny Grove icon background — ขาวให้โลโก้โชว์ชัด */
 .service-card__icon--2 {
-  background: linear-gradient(135deg, #2d6a2d, #4a9e4a) !important;
+  background: #ffffff !important;
+  border: 1px solid #e8e8e8;
 }
