@@ -2473,3 +2473,12 @@ ul { list-style: none; }
   object-fit: contain;
   border-radius: 0;
 }
+
+/* Service card logo image */
+.service-card__logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  display: block;
+}
