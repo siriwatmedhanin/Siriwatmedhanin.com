@@ -1,0 +1,14 @@
+# robots.txt — siriwatmedhanin.com
+# Last updated: 2026-10-09
+
+# อนุญาตให้ทุก bot เข้าถึงได้ทั้งหมด
+User-agent: *
+Allow: /
+
+# ไม่อนุญาตให้ index ไฟล์ระบบ
+Disallow: /.kiro/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Sitemap
+Sitemap: https://siriwatmedhanin.com/sitemap.xml

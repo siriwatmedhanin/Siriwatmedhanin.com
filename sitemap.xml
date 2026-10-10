@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- หน้าหลัก — ภาษาไทย (default) -->
+  <url>
+    <loc>https://siriwatmedhanin.com/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="th" href="https://siriwatmedhanin.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://siriwatmedhanin.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://siriwatmedhanin.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://siriwatmedhanin.com/"/>
+  </url>
+
+  <!-- Section anchors — ช่วยให้ Google เข้าใจโครงสร้างหน้า -->
+  <url>
+    <loc>https://siriwatmedhanin.com/#about</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://siriwatmedhanin.com/#services</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://siriwatmedhanin.com/#benefits</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://siriwatmedhanin.com/#why-us</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://siriwatmedhanin.com/#contact</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
