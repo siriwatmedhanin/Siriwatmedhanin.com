@@ -165,3 +165,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (exec1Portrait) {
     exec1Portrait.innerHTML = '<img src="assets/images/profile-01.png" alt="Natchathon Sirivaddhamedhanin" class="exec-card__portrait-img" />';
   }
+
+  // ---- Portrait photo: exec card 2 ----
+  const exec2Portrait = document.querySelector('.exec-team__grid .exec-card:last-child .exec-card__portrait');
+  if (exec2Portrait) {
+    exec2Portrait.innerHTML = '<img src="assets/images/profile-mom-01.png" alt="Wilailuk Phetkong" class="exec-card__portrait-img" />';
+  }
