@@ -159,3 +159,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
   // ---- Floating Contact — always visible ----
+
+  // ---- Portrait photo: exec card 1 ----
+  const exec1Portrait = document.querySelector('.exec-card:first-child .exec-card__portrait');
+  if (exec1Portrait) {
+    exec1Portrait.innerHTML = '<img src="assets/images/profile-01.png" alt="Natchathon Sirivaddhamedhanin" class="exec-card__portrait-img" />';
+  }
