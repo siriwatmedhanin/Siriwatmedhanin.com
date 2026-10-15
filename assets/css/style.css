@@ -2497,3 +2497,64 @@ ul { list-style: none; }
   object-position: center top;
   display: block;
 }
+
+/* ===================================================
+   ABOUT — Photo Slider
+   =================================================== */
+
+.about-slider {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: var(--color-primary-dark);
+}
+
+.about-slider__track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-slider__slide {
+  min-width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.about-slider__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Dots */
+.about-slider__dots {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.about-slider__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.45);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.about-slider__dot.active {
+  background: var(--color-white);
+  transform: scale(1.25);
+}

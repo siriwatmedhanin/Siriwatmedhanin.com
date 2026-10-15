@@ -171,3 +171,61 @@ document.addEventListener('DOMContentLoaded', () => {
   if (exec2Portrait) {
     exec2Portrait.innerHTML = '<img src="assets/images/profile-mom-01.png" alt="Wilailuk Phetkong" class="exec-card__portrait-img" />';
   }
+
+  // ---- Build About Slider ----
+  const aboutImgWrap = document.querySelector('.about__img-wrap');
+  if (aboutImgWrap) {
+    const slides = [
+      'assets/images/photo-slide-01.png',
+      'assets/images/photo-slide-02.png',
+      'assets/images/photo-slide-03.png',
+      'assets/images/photo-slide-04.png',
+      'assets/images/photo-slide-05.png',
+    ];
+
+    // Build slider HTML
+    const trackHTML = slides.map(src =>
+      `<div class="about-slider__slide"><img src="${src}" alt="Company Photo" loading="lazy" /></div>`
+    ).join('');
+
+    const dotsHTML = slides.map((_, i) =>
+      `<button class="about-slider__dot${i === 0 ? ' active' : ''}" aria-label="Slide ${i+1}"></button>`
+    ).join('');
+
+    aboutImgWrap.className = 'about-slider';
+    aboutImgWrap.innerHTML = `
+      <div class="about-slider__track">${trackHTML}</div>
+      <div class="about-slider__dots">${dotsHTML}</div>
+    `;
+  }
+
+  // ---- About Photo Slider ----
+  const sliderTrack = document.querySelector('.about-slider__track');
+  const sliderDots  = document.querySelectorAll('.about-slider__dot');
+  let currentSlide  = 0;
+  const totalSlides = 5;
+  let sliderTimer;
+
+  function goToSlide(index) {
+    currentSlide = (index + totalSlides) % totalSlides;
+    if (sliderTrack) sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+    sliderDots.forEach((dot, i) => dot.classList.toggle('active', i === currentSlide));
+  }
+
+  function startSlider() {
+    sliderTimer = setInterval(() => goToSlide(currentSlide + 1), 3000);
+  }
+
+  function resetSlider() {
+    clearInterval(sliderTimer);
+    startSlider();
+  }
+
+  if (sliderTrack) {
+    // Wire up dots
+    sliderDots.forEach((dot, i) => {
+      dot.addEventListener('click', () => { goToSlide(i); resetSlider(); });
+    });
+    goToSlide(0);
+    startSlider();
+  }
