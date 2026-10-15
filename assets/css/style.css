@@ -2558,3 +2558,17 @@ ul { list-style: none; }
   background: var(--color-white);
   transform: scale(1.25);
 }
+
+/* About slider — mobile ratio fix */
+@media (max-width: 768px) {
+  .about-slider {
+    aspect-ratio: 16/9;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-slider {
+    aspect-ratio: 4/3;
+    max-height: 280px;
+  }
+}
