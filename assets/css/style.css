@@ -915,7 +915,7 @@ ul { list-style: none; }
   .navbar__toggle { display: flex; }
   .navbar__contact { display: none; }
 
-  .about__grid { grid-template-columns: 1fr; gap: 40px; }
+  .about__grid { grid-template-columns: 1fr; gap: 24px; }
   .about__badge { left: 0; }
 
   .services__grid { grid-template-columns: 1fr; }
@@ -2559,16 +2559,39 @@ ul { list-style: none; }
   transform: scale(1.25);
 }
 
-/* About slider — mobile ratio fix */
+/* About slider — mobile fix */
 @media (max-width: 768px) {
+  /* ย้าย slider ไปอยู่หลัง text */
+  .about__visual {
+    order: 2;
+    padding-bottom: 0;
+  }
+
+  .about__text {
+    order: 1;
+  }
+
+  /* กำหนดความสูง fixed ไม่ให้สูงเกิน */
   .about-slider {
-    aspect-ratio: 16/9;
+    aspect-ratio: unset;
+    height: 240px;
+    max-height: 240px;
+  }
+
+  /* badge ใต้ slider */
+  .about__badge {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    margin-top: 12px;
+    width: fit-content;
   }
 }
 
 @media (max-width: 480px) {
   .about-slider {
-    aspect-ratio: 4/3;
-    max-height: 280px;
+    aspect-ratio: unset;
+    height: 200px;
+    max-height: 200px;
   }
 }
