@@ -184,24 +184,24 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const trackHTML = slides.map(src =>
-      `<div class="about-slider__slide"><img src="${src}" alt="Company Photo" loading="lazy" /></div>`
+      `<div class="asd__slide"><img src="${src}" alt="Company Photo" loading="lazy" /></div>`
     ).join('');
 
     const dotsHTML = slides.map((_, i) =>
-      `<button class="about-slider__dot${i === 0 ? ' active' : ''}" aria-label="Slide ${i+1}"></button>`
+      `<button class="asd__dot${i === 0 ? ' active' : ''}" aria-label="Slide ${i+1}"></button>`
     ).join('');
 
-    aboutImgWrap.className = 'about-slider';
+    aboutImgWrap.className = 'asd';
     aboutImgWrap.innerHTML = `
-      <div class="about-slider__track">${trackHTML}</div>
-      <div class="about-slider__dots">${dotsHTML}</div>
+      <div class="asd__track">${trackHTML}</div>
+      <div class="asd__dots">${dotsHTML}</div>
     `;
   }
 
-  // ---- Build About Slider Mobile (standalone below about section) ----
+  // ---- Build About Slider Mobile (always injected, shown via CSS only on mobile) ----
   const aboutSection = document.getElementById('about');
-  if (aboutSection && window.innerWidth <= 768) {
-    const mobileSlides = [
+  if (aboutSection) {
+    const mSlides = [
       'assets/images/photo-slide-01.png',
       'assets/images/photo-slide-02.png',
       'assets/images/photo-slide-03.png',
@@ -209,31 +209,25 @@ document.addEventListener('DOMContentLoaded', () => {
       'assets/images/photo-slide-05.png',
     ];
 
-    const mTrack = mobileSlides.map(src =>
-      `<div class="about-slider__slide"><img src="${src}" alt="Company Photo" loading="lazy" /></div>`
+    const mTrack = mSlides.map(src =>
+      `<div class="asm__slide"><img src="${src}" alt="Company Photo" loading="lazy" /></div>`
     ).join('');
 
-    const mDots = mobileSlides.map((_, i) =>
-      `<button class="about-slider-m__dot${i === 0 ? ' active' : ''}" aria-label="Slide ${i+1}"></button>`
+    const mDots = mSlides.map((_, i) =>
+      `<button class="asm__dot${i === 0 ? ' active' : ''}" aria-label="Slide ${i+1}"></button>`
     ).join('');
 
-    const mobileSliderEl = document.createElement('div');
-    mobileSliderEl.className = 'about-slider-mobile';
-    mobileSliderEl.innerHTML = `
-      <div class="about-slider-mobile__track">${mTrack}</div>
-      <div class="about-slider-mobile__dots">${mDots}</div>
-    `;
+    const mEl = document.createElement('div');
+    mEl.className = 'asm';
+    mEl.innerHTML = `<div class="asm__track">${mTrack}</div><div class="asm__dots">${mDots}</div>`;
 
-    // แทรกหลัง about__grid
     const aboutGrid = aboutSection.querySelector('.about__grid');
-    if (aboutGrid) {
-      aboutGrid.insertAdjacentElement('afterend', mobileSliderEl);
-    }
+    if (aboutGrid) aboutGrid.insertAdjacentElement('afterend', mEl);
   }
 
   // ---- About Photo Slider (Desktop) ----
-  const sliderTrack = document.querySelector('.about-slider__track');
-  const sliderDots  = document.querySelectorAll('.about-slider__dot');
+  const sliderTrack = document.querySelector('.asd__track');
+  const sliderDots  = document.querySelectorAll('.asd__dot');
   let currentSlide  = 0;
   const totalSlides = 5;
   let sliderTimer;
@@ -262,8 +256,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ---- About Photo Slider (Mobile) ----
-  const mTrackEl = document.querySelector('.about-slider-mobile__track');
-  const mDotEls  = document.querySelectorAll('.about-slider-m__dot');
+  const mTrackEl = document.querySelector('.asm__track');
+  const mDotEls  = document.querySelectorAll('.asm__dot');
   let mCurrent = 0;
   let mTimer;
 
