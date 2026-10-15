@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
     exec2Portrait.innerHTML = '<img src="assets/images/profile-mom-01.png" alt="Wilailuk Phetkong" class="exec-card__portrait-img" />';
   }
 
-  // ---- Build About Slider ----
+  // ---- Build About Slider (Desktop - inside about__img-wrap) ----
   const aboutImgWrap = document.querySelector('.about__img-wrap');
   if (aboutImgWrap) {
     const slides = [
@@ -183,7 +183,6 @@ document.addEventListener('DOMContentLoaded', () => {
       'assets/images/photo-slide-05.png',
     ];
 
-    // Build slider HTML
     const trackHTML = slides.map(src =>
       `<div class="about-slider__slide"><img src="${src}" alt="Company Photo" loading="lazy" /></div>`
     ).join('');
@@ -199,7 +198,40 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
   }
 
-  // ---- About Photo Slider ----
+  // ---- Build About Slider Mobile (standalone below about section) ----
+  const aboutSection = document.getElementById('about');
+  if (aboutSection && window.innerWidth <= 768) {
+    const mobileSlides = [
+      'assets/images/photo-slide-01.png',
+      'assets/images/photo-slide-02.png',
+      'assets/images/photo-slide-03.png',
+      'assets/images/photo-slide-04.png',
+      'assets/images/photo-slide-05.png',
+    ];
+
+    const mTrack = mobileSlides.map(src =>
+      `<div class="about-slider__slide"><img src="${src}" alt="Company Photo" loading="lazy" /></div>`
+    ).join('');
+
+    const mDots = mobileSlides.map((_, i) =>
+      `<button class="about-slider-m__dot${i === 0 ? ' active' : ''}" aria-label="Slide ${i+1}"></button>`
+    ).join('');
+
+    const mobileSliderEl = document.createElement('div');
+    mobileSliderEl.className = 'about-slider-mobile';
+    mobileSliderEl.innerHTML = `
+      <div class="about-slider-mobile__track">${mTrack}</div>
+      <div class="about-slider-mobile__dots">${mDots}</div>
+    `;
+
+    // แทรกหลัง about__grid
+    const aboutGrid = aboutSection.querySelector('.about__grid');
+    if (aboutGrid) {
+      aboutGrid.insertAdjacentElement('afterend', mobileSliderEl);
+    }
+  }
+
+  // ---- About Photo Slider (Desktop) ----
   const sliderTrack = document.querySelector('.about-slider__track');
   const sliderDots  = document.querySelectorAll('.about-slider__dot');
   let currentSlide  = 0;
@@ -222,10 +254,33 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (sliderTrack) {
-    // Wire up dots
     sliderDots.forEach((dot, i) => {
       dot.addEventListener('click', () => { goToSlide(i); resetSlider(); });
     });
     goToSlide(0);
     startSlider();
+  }
+
+  // ---- About Photo Slider (Mobile) ----
+  const mTrackEl = document.querySelector('.about-slider-mobile__track');
+  const mDotEls  = document.querySelectorAll('.about-slider-m__dot');
+  let mCurrent = 0;
+  let mTimer;
+
+  function mGoTo(index) {
+    mCurrent = (index + totalSlides) % totalSlides;
+    if (mTrackEl) mTrackEl.style.transform = `translateX(-${mCurrent * 100}%)`;
+    mDotEls.forEach((dot, i) => dot.classList.toggle('active', i === mCurrent));
+  }
+
+  function mStart() {
+    mTimer = setInterval(() => mGoTo(mCurrent + 1), 3000);
+  }
+
+  if (mTrackEl) {
+    mDotEls.forEach((dot, i) => {
+      dot.addEventListener('click', () => { mGoTo(i); clearInterval(mTimer); mStart(); });
+    });
+    mGoTo(0);
+    mStart();
   }
