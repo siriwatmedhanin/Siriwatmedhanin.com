@@ -1,0 +1,24 @@
+{
+  "slides": [
+    {
+      "image": "assets/images/photo-slide-01.png",
+      "alt": "บรรยากาศบริษัท ศิริวัตร์เมธานินท์ 1"
+    },
+    {
+      "image": "assets/images/photo-slide-02.png",
+      "alt": "บรรยากาศบริษัท ศิริวัตร์เมธานินท์ 2"
+    },
+    {
+      "image": "assets/images/photo-slide-03.png",
+      "alt": "บรรยากาศบริษัท ศิริวัตร์เมธานินท์ 3"
+    },
+    {
+      "image": "assets/images/photo-slide-04.png",
+      "alt": "บรรยากาศบริษัท ศิริวัตร์เมธานินท์ 4"
+    },
+    {
+      "image": "assets/images/photo-slide-05.png",
+      "alt": "บรรยากาศบริษัท ศิริวัตร์เมธานินท์ 5"
+    }
+  ]
+}
