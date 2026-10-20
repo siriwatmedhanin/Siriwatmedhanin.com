@@ -10,75 +10,11 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-  <style>
-    :root {
-      --color-primary: #6d1f3d;
-      --color-primary-dark: #4a1529;
-      --color-accent: #c9a961;
-      --color-bg: #fafafa;
-    }
-
-    * {
-      font-family: 'Prompt', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-    }
-
-    body {
-      background: var(--color-bg) !important;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Brand banner above CMS */
-    .cms-brand-header {
-      background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
-      color: white;
-      padding: 12px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 2px solid var(--color-accent);
-      font-size: 0.9rem;
-    }
-
-    .cms-brand-title {
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .cms-brand-title img {
-      width: 28px;
-      height: 28px;
-      border-radius: 6px;
-      background: white;
-    }
-
-    .cms-security-badge {
-      background: rgba(201, 169, 97, 0.2);
-      border: 1px solid var(--color-accent);
-      color: #f7e7c4;
-      padding: 4px 12px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 500;
-    }
-  </style>
+  <!-- Sveltia CMS: Modern Git-based CMS (Fully compatible with Decap config.yml, supports Direct GitHub Token & OAuth without 404 errors) -->
+  <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" type="module"></script>
 </head>
 <body>
-  <div class="cms-brand-header">
-    <div class="cms-brand-title">
-      <img src="../assets/images/logo-smg-11.png" alt="Logo" />
-      <span>Siriwatmedhanin Group CMS</span>
-    </div>
-    <div class="cms-security-badge">
-      🔒 ระบบจำกัดสิทธิ์เฉพาะผู้ดูแลระบบ
-    </div>
-  </div>
-
-  <!-- Decap CMS Core -->
-  <script src="https://unpkg.com/decap-cms@^3.1.0/dist/decap-cms.js"></script>
 </body>
 </html>
