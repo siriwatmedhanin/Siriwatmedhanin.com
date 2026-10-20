@@ -1,0 +1,104 @@
+backend:
+  name: github
+  repo: siriwatmedhanin/Siriwatmedhanin.com
+  branch: main
+  auth_methods: [token]
+
+media_folder: "assets/images"
+public_folder: "assets/images"
+
+display_url: "https://siriwatmedhanin.com"
+logo_url: "https://siriwatmedhanin.com/assets/images/logo-smg-11.png"
+
+collections:
+  # ========================================================
+  # 1. Contact & Shop Links
+  # ========================================================
+  - name: "contact_settings"
+    label: "ข้อมูลติดต่อและร้านค้า (Contact & Shop)"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "contact"
+        label: "ข้อมูลติดต่อหลัก"
+        file: "content/contact.json"
+        format: "json"
+        fields:
+          - { label: "เบอร์โทรศัพท์ (แสดงผล)", name: "phone", widget: "string", default: "091-909-8902" }
+          - { label: "เบอร์โทรศัพท์สำหรับกดโทร (ตัวเลขล้วน)", name: "phone_raw", widget: "string", default: "0919098902" }
+          - { label: "อีเมลติดต่อ", name: "email", widget: "string", default: "contact@siriwatmedhanin.com" }
+          - { label: "ที่อยู่สำนักงานใหญ่", name: "address_th", widget: "string", default: "115/1 หมู่ที่ 2 ตำบลท่าแค อำเภอเมืองพัทลุง จังหวัดพัทลุง 93000" }
+          - { label: "เลขประจำตัวผู้เสียภาษี", name: "tax_id", widget: "string", default: "0935569001087" }
+          - { label: "Facebook Page URL", name: "facebook_url", widget: "string", default: "https://www.facebook.com/share/1FGMbjt1ME/?mibextid=wwXIfr" }
+          - { label: "Messenger URL", name: "messenger_url", widget: "string", default: "https://m.me/61594849079754" }
+          - label: "ลิงก์ร้านค้าออนไลน์ (Shop Online)"
+            name: "shop_links"
+            widget: "object"
+            fields:
+              - { label: "ตำรับแม่ฉวี - Shopee", name: "maechawi_shopee", widget: "string" }
+              - { label: "ตำรับแม่ฉวี - TikTok Shop", name: "maechawi_tiktok", widget: "string" }
+              - { label: "ตำรับแม่ฉวี - Thaimart", name: "maechawi_thaimart", widget: "string" }
+              - { label: "ตำรับแม่ฉวี - Facebook Shop", name: "maechawi_facebook", widget: "string" }
+              - { label: "Sunny Grove - TikTok Shop", name: "sunnygrove_tiktok", widget: "string" }
+
+  # ========================================================
+  # 2. Executive Team
+  # ========================================================
+  - name: "team_settings"
+    label: "ทีมผู้บริหาร (Executive Team)"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "team"
+        label: "ข้อมูลผู้บริหาร 2 ท่าน"
+        file: "content/team.json"
+        format: "json"
+        fields:
+          - label: "ผู้บริหารท่านที่ 1 (คุณณัฐชาธรณ์ ศิริวัตร์เมธานินท์)"
+            name: "exec1"
+            widget: "object"
+            fields:
+              - { label: "ชื่อ (ภาษาไทย)", name: "name_th", widget: "string" }
+              - { label: "ชื่อ (ภาษาอังกฤษ)", name: "name_en", widget: "string" }
+              - { label: "ตำแหน่ง (ภาษาไทย)", name: "position_th", widget: "string" }
+              - { label: "ตำแหน่ง (ภาษาอังกฤษ)", name: "position_en", widget: "string" }
+              - { label: "สายงาน / แท็ก", name: "tag_th", widget: "string" }
+              - { label: "คำคมวิสัยทัศน์", name: "quote_th", widget: "text" }
+              - { label: "บทบาทและวิสัยทัศน์", name: "vision_th", widget: "text" }
+              - { label: "รูปภาพพอร์ตเทรต", name: "photo", widget: "image", choose_url: false }
+
+          - label: "ผู้บริหารท่านที่ 2 (คุณวิไลลักษณ์ เพชรคง)"
+            name: "exec2"
+            widget: "object"
+            fields:
+              - { label: "ชื่อ (ภาษาไทย)", name: "name_th", widget: "string" }
+              - { label: "ชื่อ (ภาษาอังกฤษ)", name: "name_en", widget: "string" }
+              - { label: "ตำแหน่ง (ภาษาไทย)", name: "position_th", widget: "string" }
+              - { label: "ตำแหน่ง (ภาษาอังกฤษ)", name: "position_en", widget: "string" }
+              - { label: "สายงาน / แท็ก", name: "tag_th", widget: "string" }
+              - { label: "คำคมวิสัยทัศน์", name: "quote_th", widget: "text" }
+              - { label: "บทบาทและวิสัยทัศน์", name: "vision_th", widget: "text" }
+              - { label: "รูปภาพพอร์ตเทรต", name: "photo", widget: "image", choose_url: false }
+
+  # ========================================================
+  # 3. Slideshow Images
+  # ========================================================
+  - name: "slides_settings"
+    label: "ภาพสไลด์โชว์ About Us"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "slides"
+        label: "รายการรูปภาพสไลด์โชว์"
+        file: "content/slides.json"
+        format: "json"
+        fields:
+          - label: "รูปภาพสไลด์ทั้งหมด"
+            name: "slides"
+            widget: "list"
+            fields:
+              - { label: "เลือกรูปภาพ", name: "image", widget: "image", choose_url: false }
+              - { label: "คำอธิบายรูป (Alt text)", name: "alt", widget: "string" }
