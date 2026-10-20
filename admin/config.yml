@@ -2,8 +2,7 @@ backend:
   name: github
   repo: siriwatmedhanin/Siriwatmedhanin.com
   branch: main
-  base_url: https://siriwatmedhanin.com
-  auth_endpoint: /api/auth
+  auth_methods: [token]
 
 media_folder: "assets/images"
 public_folder: "assets/images"
