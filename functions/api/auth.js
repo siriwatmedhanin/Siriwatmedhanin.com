@@ -3,15 +3,31 @@
  * Initiates GitHub OAuth authentication for Decap CMS
  */
 
-export async function onRequestGet(context) {
-  const { env } = context;
+export async function onRequest(context) {
+  const { request, env } = context;
+
+  // Handle CORS preflight
+  if (request.method === 'OPTIONS') {
+    return new Response(null, {
+      status: 204,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+      },
+    });
+  }
+
   const clientId = env.GITHUB_CLIENT_ID;
 
   if (!clientId) {
-    return new Response('Error: GITHUB_CLIENT_ID environment variable is missing in Cloudflare Pages.', {
-      status: 500,
-      headers: { 'Content-Type': 'text/plain; charset=utf-8' }
-    });
+    return new Response(
+      'Error: GITHUB_CLIENT_ID is not configured in Cloudflare Pages Environment Variables.',
+      {
+        status: 500,
+        headers: { 'Content-Type': 'text/plain; charset=utf-8' },
+      }
+    );
   }
 
   // GitHub authorization endpoint
@@ -20,4 +36,8 @@ export async function onRequestGet(context) {
   url.searchParams.set('scope', 'repo,user');
 
   return Response.redirect(url.toString(), 302);
+}
+
+export async function onRequestGet(context) {
+  return onRequest(context);
 }

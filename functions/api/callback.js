@@ -4,8 +4,21 @@
  * and sends token back to Decap CMS window ONLY if authorized.
  */
 
-export async function onRequestGet(context) {
+export async function onRequest(context) {
   const { request, env } = context;
+
+  // Handle CORS preflight
+  if (request.method === 'OPTIONS') {
+    return new Response(null, {
+      status: 204,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+      },
+    });
+  }
+
   const url = new URL(request.url);
   const code = url.searchParams.get('code');
 
@@ -26,21 +39,21 @@ export async function onRequestGet(context) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'User-Agent': 'Siriwatmedhanin-DecapCMS-OAuth'
+        Accept: 'application/json',
+        'User-Agent': 'Siriwatmedhanin-DecapCMS-OAuth',
       },
       body: JSON.stringify({
         client_id: clientId,
         client_secret: clientSecret,
-        code: code
-      })
+        code: code,
+      }),
     });
 
     const data = await tokenRes.json();
 
     if (data.error || !data.access_token) {
       return renderResponse('error', {
-        message: data.error_description || data.error || 'Failed to obtain access token from GitHub.'
+        message: data.error_description || data.error || 'Failed to obtain access token from GitHub.',
       });
     }
 
@@ -49,10 +62,10 @@ export async function onRequestGet(context) {
     // 2. Fetch authenticated GitHub user details
     const userRes = await fetch('https://api.github.com/user', {
       headers: {
-        'Authorization': `Bearer ${accessToken}`,
+        Authorization: `Bearer ${accessToken}`,
         'User-Agent': 'Siriwatmedhanin-DecapCMS-OAuth',
-        'Accept': 'application/vnd.github.v3+json'
-      }
+        Accept: 'application/vnd.github.v3+json',
+      },
     });
 
     if (!userRes.ok) {
@@ -66,7 +79,7 @@ export async function onRequestGet(context) {
     // Check against configured whitelist (defaulting to repository owner: 'siriwatmedhanin')
     const allowedUsersConfig = (env.ALLOWED_GITHUB_USERS || 'siriwatmedhanin')
       .split(',')
-      .map(u => u.trim().toLowerCase())
+      .map((u) => u.trim().toLowerCase())
       .filter(Boolean);
 
     let isAuthorized = allowedUsersConfig.includes(username);
@@ -74,13 +87,16 @@ export async function onRequestGet(context) {
     // If not explicitly in the whitelist, check if the user has collaborator write/admin rights on the repo
     if (!isAuthorized) {
       try {
-        const repoRes = await fetch(`https://api.github.com/repos/siriwatmedhanin/Siriwatmedhanin.com/collaborators/${username}/permission`, {
-          headers: {
-            'Authorization': `Bearer ${accessToken}`,
-            'User-Agent': 'Siriwatmedhanin-DecapCMS-OAuth',
-            'Accept': 'application/vnd.github.v3+json'
+        const repoRes = await fetch(
+          `https://api.github.com/repos/siriwatmedhanin/Siriwatmedhanin.com/collaborators/${username}/permission`,
+          {
+            headers: {
+              Authorization: `Bearer ${accessToken}`,
+              'User-Agent': 'Siriwatmedhanin-DecapCMS-OAuth',
+              Accept: 'application/vnd.github.v3+json',
+            },
           }
-        });
+        );
 
         if (repoRes.ok) {
           const permData = await repoRes.json();
@@ -97,19 +113,22 @@ export async function onRequestGet(context) {
     // 4. Deny access if user is not authorized
     if (!isAuthorized) {
       return renderResponse('error', {
-        message: `ไม่อนุญาตให้เข้าใช้งาน: บัญชี GitHub @${githubUser.login} ไม่มีสิทธิ์เข้าถึงระบบ CMS นี้ (Access Denied: Only authorized owners can access.)`
+        message: `ไม่อนุญาตให้เข้าใช้งาน: บัญชี GitHub @${githubUser.login} ไม่มีสิทธิ์เข้าถึงระบบ CMS นี้ (Access Denied: Only authorized owners can access.)`,
       });
     }
 
     // 5. Authorized: Deliver token to Decap CMS
     return renderResponse('success', {
       token: accessToken,
-      provider: 'github'
+      provider: 'github',
     });
-
   } catch (err) {
     return renderResponse('error', { message: err.message || 'OAuth authentication process failed.' });
   }
+}
+
+export async function onRequestGet(context) {
+  return onRequest(context);
 }
 
 function renderResponse(status, content) {
@@ -139,7 +158,7 @@ function renderResponse(status, content) {
       padding: 32px;
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-      max-width: 400px;
+      max-width: 420px;
     }
     .status-icon {
       font-size: 40px;
@@ -183,7 +202,7 @@ function renderResponse(status, content) {
   return new Response(html, {
     status: isSuccess ? 200 : 403,
     headers: {
-      'Content-Type': 'text/html; charset=utf-8'
-    }
+      'Content-Type': 'text/html; charset=utf-8',
+    },
   });
 }
