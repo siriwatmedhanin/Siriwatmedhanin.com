@@ -126,6 +126,8 @@
     const data = await fetchJson('content/team.json');
     if (!data) return;
 
+    const currentLang = localStorage.getItem('smg-lang') || 'th';
+
     if (data.exec1) {
       const card1 = document.querySelector('.exec-team__grid .exec-card:first-child');
       if (card1) {
@@ -134,16 +136,27 @@
           if (img) img.src = data.exec1.photo;
         }
         if (data.exec1.quote_th) {
-          const quote = card1.querySelector('.exec-card__quote');
-          if (quote) quote.innerHTML = '&ldquo;' + data.exec1.quote_th + '&rdquo;';
+          if (typeof translations !== 'undefined' && translations.th) {
+            translations.th.exec1Quote = '&ldquo;' + data.exec1.quote_th + '&rdquo;';
+          }
+          const quoteP = card1.querySelector('[data-i18n="exec1Quote"]') || card1.querySelector('.exec-card__quote p');
+          if (quoteP && currentLang === 'th') {
+            quoteP.innerHTML = '&ldquo;' + data.exec1.quote_th + '&rdquo;';
+          }
         }
         if (data.exec1.name_th) {
+          if (typeof translations !== 'undefined' && translations.th) {
+            translations.th.exec1Name = data.exec1.name_th;
+          }
           const name = card1.querySelector('.exec-card__name');
-          if (name) name.textContent = data.exec1.name_th;
+          if (name && currentLang === 'th') name.textContent = data.exec1.name_th;
         }
         if (data.exec1.vision_th) {
+          if (typeof translations !== 'undefined' && translations.th) {
+            translations.th.exec1Vision = data.exec1.vision_th;
+          }
           const vision = card1.querySelector('.exec-card__vision');
-          if (vision) vision.textContent = data.exec1.vision_th;
+          if (vision && currentLang === 'th') vision.textContent = data.exec1.vision_th;
         }
       }
     }
@@ -156,16 +169,27 @@
           if (img) img.src = data.exec2.photo;
         }
         if (data.exec2.quote_th) {
-          const quote = card2.querySelector('.exec-card__quote');
-          if (quote) quote.innerHTML = '&ldquo;' + data.exec2.quote_th + '&rdquo;';
+          if (typeof translations !== 'undefined' && translations.th) {
+            translations.th.exec2Quote = '&ldquo;' + data.exec2.quote_th + '&rdquo;';
+          }
+          const quoteP = card2.querySelector('[data-i18n="exec2Quote"]') || card2.querySelector('.exec-card__quote p');
+          if (quoteP && currentLang === 'th') {
+            quoteP.innerHTML = '&ldquo;' + data.exec2.quote_th + '&rdquo;';
+          }
         }
         if (data.exec2.name_th) {
+          if (typeof translations !== 'undefined' && translations.th) {
+            translations.th.exec2Name = data.exec2.name_th;
+          }
           const name = card2.querySelector('.exec-card__name');
-          if (name) name.textContent = data.exec2.name_th;
+          if (name && currentLang === 'th') name.textContent = data.exec2.name_th;
         }
         if (data.exec2.vision_th) {
+          if (typeof translations !== 'undefined' && translations.th) {
+            translations.th.exec2Vision = data.exec2.vision_th;
+          }
           const vision = card2.querySelector('.exec-card__vision');
-          if (vision) vision.textContent = data.exec2.vision_th;
+          if (vision && currentLang === 'th') vision.textContent = data.exec2.vision_th;
         }
       }
     }
