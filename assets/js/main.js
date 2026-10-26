@@ -59,6 +59,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // ---- Staff Portal dropdown toggle ----
+  const staffPortal = document.getElementById('staffPortal');
+  const staffPortalBtn = document.getElementById('staffPortalBtn');
+  if (staffPortal && staffPortalBtn) {
+    staffPortalBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = staffPortal.classList.toggle('is-active');
+      staffPortalBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!staffPortal.contains(e.target)) {
+        staffPortal.classList.remove('is-active');
+        staffPortalBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && staffPortal.classList.contains('is-active')) {
+        staffPortal.classList.remove('is-active');
+        staffPortalBtn.setAttribute('aria-expanded', 'false');
+        staffPortalBtn.focus();
+      }
+    });
+  }
+
   // ---- Active nav link on scroll ----
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.navbar__links a');

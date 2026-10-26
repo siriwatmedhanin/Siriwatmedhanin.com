@@ -143,6 +143,37 @@
         </ul>
       </nav>
 
+      <!-- Staff Portal Dropdown -->
+      <div class="staff-portal" id="staffPortal">
+        <button class="staff-portal__btn" id="staffPortalBtn" aria-haspopup="true" aria-expanded="false" aria-label="ระบบพนักงาน">
+          <i class="fas fa-lock staff-portal__icon"></i>
+          <span class="staff-portal__text" data-i18n="navStaff">ระบบพนักงาน</span>
+          <i class="fas fa-caret-down staff-portal__caret"></i>
+        </button>
+
+        <div class="staff-portal__dropdown" id="staffPortalDropdown" role="menu" aria-label="เมนูระบบพนักงาน">
+          <a href="https://hrm.siriwatmedhanin.com" target="_blank" rel="noopener noreferrer" class="staff-portal__item" role="menuitem">
+            <div class="staff-portal__item-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="staff-portal__item-content">
+              <div class="staff-portal__item-title" data-i18n="staffHrmTitle">ระบบลงเวลาเข้างาน (HRM)</div>
+              <div class="staff-portal__item-desc" data-i18n="staffHrmDesc">สำหรับบันทึกเวลาทำงาน</div>
+            </div>
+          </a>
+
+          <a href="https://fin.siriwatmedhanin.com" target="_blank" rel="noopener noreferrer" class="staff-portal__item" role="menuitem">
+            <div class="staff-portal__item-icon">
+              <i class="fas fa-file-invoice-dollar"></i>
+            </div>
+            <div class="staff-portal__item-content">
+              <div class="staff-portal__item-title" data-i18n="staffFinTitle">เอกสารการเงินและเคลียร์ค่าใช้จ่าย (FIN)</div>
+              <div class="staff-portal__item-desc" data-i18n="staffFinDesc">สำหรับยื่นเคลียร์บิลและแบบร่าง</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
       <!-- Language Switcher -->
       <div class="lang-switcher" id="langSwitcher">
 
