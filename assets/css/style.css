@@ -165,7 +165,7 @@ ul { list-style: none; }
 .navbar__inner {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
 }
 
 .navbar__logo {
@@ -207,21 +207,31 @@ ul { list-style: none; }
 .navbar.scrolled .logo-text--th { color: var(--color-primary-dark); }
 .navbar.scrolled .logo-text--en { color: var(--color-text-light); }
 
-.navbar__menu { margin-left: auto; }
+.navbar__menu {
+  margin-left: auto;
+  flex-shrink: 0;
+}
 
 .navbar__links {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.navbar__links li {
+  white-space: nowrap;
 }
 
 .navbar__links a {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 600;
   color: rgba(255,255,255,0.9);
-  padding: 8px 14px;
+  padding: 6px 11px;
   border-radius: var(--radius-xl);
   transition: var(--transition);
+  white-space: nowrap !important;
+  display: inline-block;
 }
 .navbar__links a:hover {
   color: var(--color-white);
@@ -3057,5 +3067,31 @@ ul { list-style: none; }
   }
   .staff-portal__btn {
     padding: 5px 8px;
+  }
+}
+
+/* Tablet & Intermediate Laptop Navbar (769px - 1200px) */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .navbar__inner {
+    gap: 10px;
+  }
+  .navbar__links {
+    gap: 2px;
+  }
+  .navbar__links a {
+    padding: 5px 8px;
+    font-size: 0.82rem;
+  }
+  .staff-portal__btn {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    gap: 6px;
+  }
+  .navbar .lang-switcher {
+    padding: 3px;
+    gap: 2px;
+  }
+  .navbar .lang-btn {
+    padding: 4px 6px;
   }
 }
