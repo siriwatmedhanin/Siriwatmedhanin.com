@@ -3095,3 +3095,385 @@ ul { list-style: none; }
     padding: 4px 6px;
   }
 }
+/* ===================================================
+   B2B E-COMMERCE SOLUTIONS SECTION (Approach 1 - Soft Premium Burgundy)
+   =================================================== */
+
+.ecom-section {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(155deg, #4d152c 0%, #661838 32%, #421124 70%, #2a0a16 100%);
+  color: #ffffff;
+  padding: 86px 0 94px;
+}
+
+/* Ambient Top-Center Radial Glow */
+.ecom-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(212, 175, 55, 0.24) 0%, rgba(139, 40, 73, 0.28) 45%, transparent 75%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.ecom-section__glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(90px);
+}
+
+.ecom-section__glow--1 {
+  top: -50px;
+  right: -50px;
+  width: 440px;
+  height: 440px;
+  background: #d4af37;
+  opacity: 0.26;
+}
+
+.ecom-section__glow--2 {
+  bottom: -50px;
+  left: -50px;
+  width: 440px;
+  height: 440px;
+  background: #8b2849;
+  opacity: 0.38;
+}
+
+.ecom-section__inner {
+  position: relative;
+  z-index: 10;
+}
+
+.ecom-section__header {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 42px;
+}
+
+.ecom-section__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 20px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(245, 213, 139, 0.55);
+  color: #ffe399;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.22);
+}
+
+.ecom-section__badge i {
+  color: #ffd875;
+}
+
+.ecom-section__title {
+  font-family: 'Kanit', sans-serif;
+  font-size: clamp(1.85rem, 3.2vw, 2.4rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.32;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.32);
+}
+
+.ecom-section__subtitle {
+  font-size: 0.96rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 780px;
+  margin: 0 auto 20px;
+  line-height: 1.7;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ecom-platforms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.ecom-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 16px;
+  border-radius: 9px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ecom-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.ecom-pill--tiktok {
+  background: #000000;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.ecom-pill--shopee {
+  background: #ee4d2d;
+}
+
+.ecom-pill--lazada {
+  background: #0f146d;
+}
+
+.ecom-pill--thaimart {
+  background: #e11d24;
+}
+
+.ecom-pill__logo {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* 4 Pillars Grid */
+.ecom-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-top: 42px;
+}
+
+.ecom-card {
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.06) 100%);
+  border: 1px solid rgba(245, 213, 139, 0.32);
+  border-radius: 18px;
+  padding: 28px 22px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 12px 32px rgba(22, 4, 10, 0.32), inset 0 1px 0 rgba(255, 255, 255, 0.22);
+  transition: all 0.35s cubic-bezier(0.2, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ecom-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(212, 175, 55, 0.85);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.4), 0 0 24px rgba(212, 175, 55, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.09) 100%);
+}
+
+.ecom-card__icon-wrap {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.32) 0%, rgba(212, 175, 55, 0.12) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffe6a3;
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.ecom-card:hover .ecom-card__icon-wrap {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.45) 0%, rgba(212, 175, 55, 0.2) 100%);
+}
+
+.ecom-card__title {
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 3px;
+  line-height: 1.3;
+}
+
+.ecom-card__tag {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #f5d58b;
+  margin-bottom: 12px;
+}
+
+.ecom-card__desc {
+  font-size: 0.86rem;
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.65;
+  margin-bottom: 18px;
+}
+
+.ecom-card__bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ecom-card__bullets li {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.92);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.ecom-card__bullets i {
+  color: #ffd875;
+  font-size: 0.76rem;
+}
+
+/* CTA Bar */
+.ecom-cta {
+  margin-top: 40px;
+  background: linear-gradient(135deg, rgba(78, 20, 43, 0.72) 0%, rgba(44, 10, 23, 0.88) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.52);
+  border-radius: 18px;
+  padding: 24px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(14px);
+}
+
+.ecom-cta__content {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.ecom-cta__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffd875 0%, #d4af37 60%, #b8973e 100%);
+  color: #2a0815;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.4);
+}
+
+.ecom-cta__text h4 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 3px;
+}
+
+.ecom-cta__text p {
+  font-size: 0.84rem;
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.45;
+}
+
+.ecom-cta__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.ecom-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 22px;
+  border-radius: 10px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.ecom-cta__btn--outline {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #ffffff;
+}
+
+.ecom-cta__btn--outline:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.45);
+  transform: translateY(-2px);
+}
+
+.ecom-cta__btn--gold {
+  background: linear-gradient(135deg, #fce293 0%, #d4af37 55%, #b58c14 100%);
+  color: #240510;
+  border: none;
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+.ecom-cta__btn--gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(212, 175, 55, 0.55);
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .ecom-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .ecom-section {
+    padding: 60px 0 70px;
+  }
+  .ecom-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .ecom-cta {
+    flex-direction: column;
+    text-align: center;
+    gap: 18px;
+    padding: 22px 18px;
+  }
+  .ecom-cta__content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ecom-cta__actions {
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .ecom-cta__btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .ecom-br {
+    display: none;
+  }
+}
