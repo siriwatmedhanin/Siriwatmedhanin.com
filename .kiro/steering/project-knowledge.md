@@ -59,7 +59,7 @@ Web Siri/
 1. **Navbar** — Fixed, transparent → scrolled white, Logo วงกลมใน rounded square, Language Switcher TH/EN/ZH
 2. **Hero** — Full viewport, Burgundy gradient, Guilloche SVG มุมขวา (`top: -60%, right: -15%`), hologram animation
 3. **About Us** — 2 คอลัมน์, Stat counters (animate on scroll)
-4. **Services** — 4 Cards: ตำรับแม่ฉวี / Sunny Grove / Future Ventures R&D / Local Empowerment
+4. **Services** — 4 Cards: ตำรับแม่ฉวี / SG FRUIT / Future Ventures R&D / Local Empowerment
 5. **Benefits** — 8 items grid 2 คอลัมน์
 6. **Why Choose Us** — 3 cards
 7. **Contact Process** — 3 steps + contact info cards
@@ -72,7 +72,7 @@ Web Siri/
 | กลุ่ม | แบรนด์ | รายละเอียด |
 |-------|--------|------------|
 | อาหารท้องถิ่น | ตำรับแม่ฉวี | อาหารใต้ดั้งเดิม เช่น เต้าคั่ว |
-| เกษตรพรีเมียม | Sunny Grove | อะโวคาโด 034/Hass, ลูกพลับแห้ง, รากบัว |
+| เกษตรพรีเมียม | SG FRUIT | อะโวคาโด 034/Hass, ลูกพลับแห้ง, รากบัว |
 | วิจัยและพัฒนา | Future Ventures | ผงบีทรูทสกัด, Micro-winery |
 | สนับสนุนชุมชน | Local Empowerment | รับซื้อมังคุด, สับปะรด จากเกษตรกรพัทลุง |
 
@@ -284,7 +284,7 @@ CSS class: `.exec-team`, `.exec-card` — วางใน About section ต่�
 | Facebook Shop | `fab fa-facebook-f` | `.shop-btn--fb-shop` / `.shop-btn--fb` |
 
 **ปรากฏใน 2 จุด:**
-1. การ์ด Services — ตำรับแม่ฉวี (Shopee + TikTok + Thaimart + FB), Sunny Grove (TikTok)
+1. การ์ด Services — ตำรับแม่ฉวี (Shopee + TikTok + Thaimart + FB), SG FRUIT (TikTok)
 2. Contact section — กล่อง "ช่องทางการสั่งซื้อออนไลน์" (`.shop-online-box`)
 
 **Links:**
@@ -292,7 +292,7 @@ CSS class: `.exec-team`, `.exec-card` — วางใน About section ต่�
 - ตำรับแม่ฉวี TikTok: `https://vt.tiktok.com/ZSbGe5XCX/?page=TikTokShop`
 - ตำรับแม่ฉวี Thaimart: `https://thaimart.com/s/ตำรับแม่ฉวี-เต้าคั่วท่าแค-0YqHGk`
 - ตำรับแม่ฉวี Facebook: `https://www.facebook.com/share/19nQqpkRvB/?mibextid=wwXIfr`
-- Sunny Grove TikTok: `https://vt.tiktok.com/ZSbGeqS6s/?page=TikTokShop`
+- SG FRUIT TikTok: `https://www.tiktok.com/@sg_fruit`
 - บริษัท Facebook (เพจหลัก): `https://www.facebook.com/share/1FGMbjt1ME/?mibextid=wwXIfr`
 
 ---

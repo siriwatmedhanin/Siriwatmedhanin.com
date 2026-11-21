@@ -2324,13 +2324,30 @@ ul { list-style: none; }
   box-shadow: 0 4px 12px rgba(201,169,97,0.35);
 }
 
-/* Facebook Shop — outline ทอง */
-.shop-btn--fb-shop {
+/* Web / Website — outline ทอง */
+.shop-btn--web,
+.shop-btn--website {
   color: var(--color-accent-dark);
   border-color: var(--color-accent);
   background: transparent;
 }
-.shop-btn--fb-shop:hover {
+.shop-btn--web:hover,
+.shop-btn--website:hover {
+  background: var(--color-accent);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(201,169,97,0.35);
+}
+
+/* Facebook Shop — outline ทอง */
+.shop-btn--fb-shop,
+.shop-btn--fb {
+  color: var(--color-accent-dark);
+  border-color: var(--color-accent);
+  background: transparent;
+}
+.shop-btn--fb-shop:hover,
+.shop-btn--fb:hover {
   background: var(--color-accent);
   color: var(--color-white);
   transform: translateY(-2px);
@@ -2493,10 +2510,14 @@ ul { list-style: none; }
   display: block;
 }
 
-/* Sunny Grove icon background — ขาวให้โลโก้โชว์ชัด */
+/* SG FRUIT icon background — ขาวให้โลโก้โชว์ชัด สัดส่วนไม่เพี้ยน ไม่ตัดขอบ */
 .service-card__icon--2 {
   background: #ffffff !important;
   border: 1px solid #e8e8e8;
+  padding: 4px;
+}
+.service-card__icon--2 .service-card__logo-img {
+  object-fit: contain;
 }
 
 /* Portrait photo — รูปภาพจริง */

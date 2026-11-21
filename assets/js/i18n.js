@@ -63,8 +63,8 @@ const translations = {
     // Services
     s1Badge:'ตำรับแม่ฉวี', s1Title:'อาหารท้องถิ่นภาคใต้', s1Desc:'ผลิตและจัดจำหน่ายอาหารใต้ดั้งเดิมที่ยกระดับด้วยมาตรฐานการผลิตสมัยใหม่ รสชาติแท้จากภูมิปัญญาท้องถิ่น',
     s1Li1:'เต้าคั่วตำรับดั้งเดิม', s1Li2:'กระบวนการผลิตได้มาตรฐาน', s1Li3:'อาหารใต้แปรรูปคุณภาพสูง',
-    s2Title:'ผลผลิตเกษตรพรีเมียม', s2Desc:'คัดสรรและจัดจำหน่ายผลไม้สดและวัตถุดิบคุณภาพสูงจากแหล่งปลูก ตรงจากสวนถึงมือผู้บริโภค',
-    s2Li1:'อะโวคาโดสายพันธุ์ 034 &amp; Hass', s2Li2:'ลูกพลับแห้งคุณภาพสูง', s2Li3:'รากบัวและผักพรีเมียม',
+    s2Badge:'SG FRUIT', s2Title:'ผลไม้สดตามฤดูกาลและผลผลิตพรีเมียม', s2Desc:'คัดสรรและจัดจำหน่ายผลไม้สดตามฤดูกาลและผลผลิตคุณภาพสูงจากแหล่งปลูก ตรงจากสวนถึงมือผู้บริโภค',
+    s2Li1:'อะโวคาโดสายพันธุ์ 034 &amp; Hass คัดเกรด', s2Li2:'สับปะรดภูเก็ต ห้วยมุ่น และผลไม้ตามฤดูกาล', s2Li3:'บีทรูท มันหวานญี่ปุ่น และผักสดพรีเมียม',
     s3Title:'วิจัยและพัฒนา (R&D)', s3Desc:'การพัฒนาผลิตภัณฑ์มูลค่าสูงด้วยนวัตกรรมสมัยใหม่ เพื่อสร้างมูลค่าเพิ่มให้วัตถุดิบท้องถิ่น',
     s3Li1:'นวัตกรรมผงบีทรูทสกัด', s3Li2:'Micro-winery ไวน์บ่มสเกลเล็ก', s3Li3:'พัฒนาผลิตภัณฑ์ใหม่ต่อเนื่อง',
     s4Badge:'สนับสนุนชุมชน', s4Title:'สนับสนุนชุมชน', s4Desc:'รับซื้อผลผลิตจากเกษตรกรภาคใต้และจังหวัดพัทลุง เพื่อกระจายรายได้และสร้างงานในท้องถิ่นอย่างยั่งยืน',
@@ -97,7 +97,7 @@ const translations = {
     contactFbLabel:'Facebook',
 
     // Footer links
-    footerBiz1:'ตำรับแม่ฉวี — อาหารใต้', footerBiz2:'Sunny Grove — เกษตรพรีเมียม',
+    footerBiz1:'ตำรับแม่ฉวี — อาหารใต้', footerBiz2:'SG FRUIT — ผลไม้ตามฤดูกาล',
     footerBiz3:'Future Ventures — R&D', footerBiz4:'Local Empowerment',
 
     // Shop Online
@@ -204,8 +204,8 @@ const translations = {
     // Services
     s1Badge:'Tamrab Mae Chawi', s1Title:'Southern Thai Local Food', s1Desc:'Producing and distributing traditional southern cuisine elevated with modern production standards.',
     s1Li1:'Traditional Tao Khua recipe', s1Li2:'Standardized production process', s1Li3:'Premium processed southern food',
-    s2Title:'Premium Agricultural Products', s2Desc:'Carefully selected fresh fruits and high-quality ingredients sourced directly from farms.',
-    s2Li1:'Avocado variety 034 &amp; Hass', s2Li2:'Premium dried persimmon', s2Li3:'Lotus root &amp; premium vegetables',
+    s2Badge:'SG FRUIT', s2Title:'Premium Seasonal Fruits &amp; Fresh Produce', s2Desc:'Carefully selected seasonal fresh fruits and high-quality produce sourced directly from farms to consumers.',
+    s2Li1:'Premium 034 &amp; Hass Avocados', s2Li2:'Phuket &amp; Huai Mun Pineapples &amp; Seasonal Fruits', s2Li3:'Fresh Beetroot, Japanese Sweet Potatoes &amp; Vegetables',
     s3Title:'Research &amp; Development', s3Desc:'Developing high-value products with modern innovation to create added value from local ingredients.',
     s3Li1:'Beetroot extract powder innovation', s3Li2:'Small-scale Micro-winery', s3Li3:'Continuous new product development',
     s4Badge:'Local Empowerment', s4Title:'Community Support', s4Desc:'Purchasing produce from southern Thai farmers in Phatthalung to distribute income and create local jobs.',
@@ -238,7 +238,7 @@ const translations = {
     contactFbLabel:'Facebook',
 
     // Footer links
-    footerBiz1:'Tamrab Mae Chawi — Southern Food', footerBiz2:'Sunny Grove — Premium Agriculture',
+    footerBiz1:'Tamrab Mae Chawi — Southern Food', footerBiz2:'SG FRUIT — Seasonal Fruits',
     footerBiz3:'Future Ventures — R&D', footerBiz4:'Local Empowerment',
 
     // Shop Online
@@ -345,8 +345,8 @@ const translations = {
     // Services
     s1Badge:'南部传统美食', s1Title:'泰国南部地方美食', s1Desc:'以现代生产标准生产和销售传统南部美食，保留地方智慧的原汁原味。',
     s1Li1:'传统烤豆配方', s1Li2:'标准化生产流程', s1Li3:'优质南部加工食品',
-    s2Title:'优质农业产品', s2Desc:'精心挑选直接来自产地的新鲜水果和高品质食材。',
-    s2Li1:'牛油果品种034 &amp; Hass', s2Li2:'优质柿饼', s2Li3:'莲藕及优质蔬菜',
+    s2Badge:'SG FRUIT', s2Title:'精选当季鲜果与高品质农产', s2Desc:'精心挑选直接来自优质产地的新鲜当季水果与农产品，从果园直达消费者。',
+    s2Li1:'精选 034 与哈斯牛油果', s2Li2:'普吉菠萝、惠门菠萝及当季鲜果', s2Li3:'新鲜甜菜根、日本红薯及精选蔬菜',
     s3Title:'研究与开发（R&D）', s3Desc:'以现代创新技术开发高价值产品，为本地食材创造附加价值。',
     s3Li1:'甜菜根提取粉创新', s3Li2:'小型酿酒坊（Micro-winery）', s3Li3:'持续开发新产品',
     s4Badge:'支持社区', s4Title:'支持社区', s4Desc:'从帕他伦府南部农民处收购农产品，分配收入并创造当地就业机会。',
@@ -379,7 +379,7 @@ const translations = {
     contactFbLabel:'Facebook',
 
     // Footer links
-    footerBiz1:'南部传统美食', footerBiz2:'Sunny Grove — 优质农产品',
+    footerBiz1:'南部传统美食', footerBiz2:'SG FRUIT — 当季鲜果',
     footerBiz3:'Future Ventures — 研发', footerBiz4:'社区支持',
 
     // Shop Online

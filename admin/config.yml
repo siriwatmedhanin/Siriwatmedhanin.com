@@ -40,7 +40,9 @@ collections:
               - { label: "ตำรับแม่ฉวี - TikTok Shop", name: "maechawi_tiktok", widget: "string" }
               - { label: "ตำรับแม่ฉวี - Thaimart", name: "maechawi_thaimart", widget: "string" }
               - { label: "ตำรับแม่ฉวี - Facebook Shop", name: "maechawi_facebook", widget: "string" }
-              - { label: "Sunny Grove - TikTok Shop", name: "sunnygrove_tiktok", widget: "string" }
+              - { label: "SG FRUIT - Website", name: "sgfruit_website", widget: "string" }
+              - { label: "SG FRUIT - TikTok Shop", name: "sgfruit_tiktok", widget: "string" }
+              - { label: "SG FRUIT - Facebook", name: "sgfruit_facebook", widget: "string" }
 
   # ========================================================
   # 2. Executive Team

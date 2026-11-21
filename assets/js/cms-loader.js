@@ -114,9 +114,15 @@
       if (links.maechawi_facebook) {
         document.querySelectorAll('a.shop-btn--fb-shop').forEach(a => a.href = links.maechawi_facebook);
       }
-      if (links.sunnygrove_tiktok) {
-        const sgTiktok = document.querySelector('.shop-online-brand:last-of-type a.shop-btn--tiktok');
-        if (sgTiktok) sgTiktok.href = links.sunnygrove_tiktok;
+      if (links.sgfruit_website) {
+        document.querySelectorAll('a.shop-btn--web').forEach(a => a.href = links.sgfruit_website);
+      }
+      const sgFruitTiktokUrl = links.sgfruit_tiktok || links.sunnygrove_tiktok;
+      if (sgFruitTiktokUrl) {
+        document.querySelectorAll('.shop-online-brand:last-of-type a.shop-btn--tiktok, .service-card:nth-of-type(2) a.shop-btn--tiktok').forEach(a => a.href = sgFruitTiktokUrl);
+      }
+      if (links.sgfruit_facebook) {
+        document.querySelectorAll('.shop-online-brand:last-of-type a.shop-btn--fb-shop, .service-card:nth-of-type(2) a.shop-btn--fb-shop').forEach(a => a.href = links.sgfruit_facebook);
       }
     }
   }
