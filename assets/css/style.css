@@ -2510,14 +2510,32 @@ ul { list-style: none; }
   display: block;
 }
 
-/* SG FRUIT icon background — ขาวให้โลโก้โชว์ชัด สัดส่วนไม่เพี้ยน ไม่ตัดขอบ */
+/* SG FRUIT card icon & shop buttons — ไร้กรอบขาว/ระยะขอบ เต็มกรอบพอดีเท่าการ์ดข้างเคียง พร้อมจัดวางปุ่ม 2 ปุ่มต่อแถว */
 .service-card__icon--2 {
-  background: #ffffff !important;
-  border: 1px solid #e8e8e8;
-  padding: 4px;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  overflow: hidden;
 }
 .service-card__icon--2 .service-card__logo-img {
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  display: block;
+}
+
+.service-card--featured .service-card__shop-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 16px;
+  padding-top: 14px;
+}
+.service-card--featured .service-card__shop-btns .shop-btn {
+  padding: 5px 9px;
+  font-size: 0.72rem;
+  gap: 5px;
 }
 
 /* Portrait photo — รูปภาพจริง */
