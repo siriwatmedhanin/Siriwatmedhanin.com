@@ -3860,28 +3860,18 @@ body.modal-open {
   overflow: hidden;
 }
 
-/* LINE Contact Channel Styles */
-.float-item svg {
-  width: 22px;
-  height: 22px;
-  fill: currentColor;
+/* LINE Contact Channel Styles (Font Awesome) */
+.float-item--line i {
+  font-size: 1.25rem;
+  line-height: 1;
 }
 
 .contact-card__icon--line {
   background: #06c755 !important;
 }
 
-.contact-card__icon--line svg {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
-
-.footer__line-icon {
-  color: var(--color-accent);
-  margin-top: 3px;
-  flex-shrink: 0;
-  width: 14px;
-  height: 14px;
+.contact-card__icon--line i {
+  font-size: 1.25rem;
+  line-height: 1;
 }
 
