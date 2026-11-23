@@ -3867,7 +3867,8 @@ body.modal-open {
 }
 
 .contact-card__icon--line {
-  background: #06c755 !important;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light)) !important;
+  color: var(--color-white);
 }
 
 .contact-card__icon--line i {
