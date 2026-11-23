@@ -96,7 +96,7 @@
       {
         "@type": "Brand",
         "name": "SG FRUIT",
-        "alternateName": ["เอสจี ฟรุ๊ต", "SG Fruit", "Sunny Grove"],
+        "alternateName": ["เอสจี ฟรุ๊ต", "SG Fruit"],
         "url": "https://sg-fruit.siriwatmedhanin.com/",
         "description": "คัดสรรและจัดจำหน่ายผลไม้สดตามฤดูกาลและผลผลิตคุณภาพสูงจากแหล่งปลูก ตรงจากสวนถึงมือผู้บริโภค",
         "sameAs": [
@@ -899,8 +899,10 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <div class="container">
-        <p data-i18n="footerCopyright">&copy; 2026 เธเธฃเธดเธฉเธฑเธ— เธจเธดเธฃเธดเธงเธฑเธ•เธฃเนเน€เธกเธเธฒเธเธดเธเธ—เน เธเธฃเธธเนเธ เธเธณเธเธฑเธ”. เธชเธเธงเธเธฅเธดเธเธชเธดเธ—เธเธดเนเธ—เธธเธเธเธฃเธฐเธเธฒเธฃ.</p>
+      <div class="container footer__bottom-flex">
+        <p data-i18n="footerCopyright">&copy; 2026 บริษัท ศิริวัตร์เมธานินท์ กรุ๊ป จำกัด. สงวนลิขสิทธิ์ทุกประการ.</p>
+        <span class="footer__bottom-divider">•</span>
+        <a href="javascript:void(0)" class="footer__privacy-link" id="openPrivacyPolicyLink" data-i18n="privacyPolicyLink">นโยบายความเป็นส่วนตัว</a>
       </div>
     </div>
   </footer>
@@ -939,9 +941,90 @@
     </div>
   </div>
 
+  <!-- ========== COOKIE CONSENT BANNER (PDPA) ========== -->
+  <div class="cookie-banner" id="cookieBanner" role="region" aria-label="การตั้งค่าคุกกี้" style="display: none;">
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__content">
+        <i class="fas fa-cookie-bite cookie-banner__icon"></i>
+        <p class="cookie-banner__text" data-i18n="cookieNoticeText">
+          เว็บไซต์บริษัท ศิริวัตร์เมธานินท์ กรุ๊ป จำกัด ใช้คุกกี้เพื่อพัฒนาประสบการณ์การใช้งานของท่าน อ่านเพิ่มเติมได้ที่ <a href="javascript:void(0)" class="cookie-banner__link" id="cookiePrivacyLink">นโยบายความเป็นส่วนตัว</a>
+        </p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button type="button" class="cookie-btn cookie-btn--essential" id="cookieEssentialBtn" data-i18n="cookieEssentialBtn">ยอมรับเฉพาะที่จำเป็น</button>
+        <button type="button" class="cookie-btn cookie-btn--accept" id="cookieAcceptAllBtn" data-i18n="cookieAcceptAllBtn">ยอมรับทั้งหมด</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== PRIVACY POLICY MODAL (PDPA) ========== -->
+  <div class="privacy-modal" id="privacyModal" role="dialog" aria-modal="true" aria-labelledby="privacyModalTitle" hidden>
+    <div class="privacy-modal__backdrop" id="privacyModalBackdrop"></div>
+    <div class="privacy-modal__dialog">
+      <div class="privacy-modal__header">
+        <div class="privacy-modal__header-title">
+          <i class="fas fa-shield-halved privacy-modal__icon"></i>
+          <h3 id="privacyModalTitle" data-i18n="privacyModalTitle">นโยบายความเป็นส่วนตัว (Privacy Policy)</h3>
+        </div>
+        <button type="button" class="privacy-modal__close" id="privacyModalClose" aria-label="ปิด">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="privacy-modal__body" id="privacyModalBody" data-i18n="privacyModalBody">
+        <p class="privacy-modal__lead"><strong>บริษัท ศิริวัตร์เมธานินท์ กรุ๊ป จำกัด</strong> ("บริษัท") ให้ความสำคัญอย่างยิ่งต่อการคุ้มครองข้อมูลส่วนบุคคลของท่าน นโยบายความเป็นส่วนตัวฉบับนี้จัดทำขึ้นเพื่อให้สอดคล้องกับพระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 (PDPA) โดยอธิบายถึงวิธีการเก็บรวบรวม ใช้ เปิดเผย และปกป้องข้อมูลส่วนบุคคลของท่านเมื่อเข้าชมเว็บไซต์หรือติดต่อประสานงานกับบริษัท</p>
+
+        <h4>1. ผู้ควบคุมข้อมูลส่วนบุคคล (Data Controller)</h4>
+        <p>
+          <strong>บริษัท ศิริวัตร์เมธานินท์ กรุ๊ป จำกัด (SIRIWATMEDHANIN GROUP CO., LTD.)</strong><br/>
+          สำนักงานใหญ่: 115/1 หมู่ที่ 2 ตำบลท่าแค อำเภอเมืองพัทลุง จังหวัดพัทลุง 93000<br/>
+          เลขประจำตัวผู้เสียภาษี: 0935569001087<br/>
+          อีเมล: contact@siriwatmedhanin.com | โทรศัพท์: 091-909-8902
+        </p>
+
+        <h4>2. ข้อมูลส่วนบุคคลที่เราเก็บรวบรวม</h4>
+        <p>บริษัทเก็บรวบรวมข้อมูลส่วนบุคคลเท่าที่จำเป็นตามวัตถุประสงค์ ได้แก่:</p>
+        <ul>
+          <li><strong>ข้อมูลการใช้งานเว็บไซต์และคุกกี้ (Cookies):</strong> คุกกี้การตั้งค่าพื้นฐาน (เช่น การเลือกภาษา TH/EN/ZH) และสถานะการยินยอมคุกกี้ (Cookie Consent) ซึ่งเก็บไว้ในอุปกรณ์ของท่าน (Local Storage) เพื่ออำนวยความสะดวกในการใช้งาน</li>
+          <li><strong>ข้อมูลการติดต่อทางธุรกิจ:</strong> ข้อมูลที่ท่านให้ไว้เมื่อติดต่อสอบถาม ขอใบเสนอราคา หรือประสานงานความร่วมมือ B2B ผ่านทางแบบฟอร์ม อีเมล โทรศัพท์ หรือแอปพลิเคชันส่งข้อความ เช่น ชื่อ-นามสกุล, ชื่อบริษัท/หน่วยงาน, หมายเลขโทรศัพท์, อีเมล และรายละเอียดความต้องการทางธุรกิจ</li>
+        </ul>
+
+        <h4>3. วัตถุประสงค์ในการเก็บรวบรวมและใช้ข้อมูล</h4>
+        <ul>
+          <li>เพื่อการติดต่อสื่อสาร ตอบข้อซักถาม และจัดทำใบเสนอราคาหรือข้อเสนอทางธุรกิจ B2B</li>
+          <li>เพื่อส่งมอบบริการและการประสานงานตามสัญญาหรือข้อตกลงร่วมกัน</li>
+          <li>เพื่อปรับปรุง ประเมิน และพัฒนาประสิทธิภาพการแสดงผลของเว็บไซต์ให้เหมาะสมกับผู้ใช้งาน</li>
+          <li>เพื่อการปฏิบัติตามกฎหมายที่เกี่ยวข้องและการใช้สิทธิเรียกร้องทางกฎหมาย</li>
+        </ul>
+
+        <h4>4. สิทธิของเจ้าของข้อมูลส่วนบุคคลตาม PDPA</h4>
+        <p>ท่านมีสิทธิตามกฎหมายคุ้มครองข้อมูลส่วนบุคคล ดังต่อไปนี้:</p>
+        <ul>
+          <li>สิทธิในการเข้าถึงและขอรับสำเนาข้อมูลส่วนบุคคลของท่าน</li>
+          <li>สิทธิในการขอให้แก้ไขข้อมูลให้ถูกต้อง เป็นปัจจุบัน และสมบูรณ์</li>
+          <li>สิทธิในการขอให้ลบ ทำลาย หรือทำให้ข้อมูลไม่สามารถระบุตัวบุคคลได้</li>
+          <li>สิทธิในการระงับการใช้ข้อมูลส่วนบุคคล</li>
+          <li>สิทธิในการคัดค้านการเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูล</li>
+          <li>สิทธิในการเพิกถอนความยินยอม (กรณีที่ประมวลผลข้อมูลโดยอาศัยความยินยอม)</li>
+        </ul>
+
+        <h4>5. การติดต่อเรา</h4>
+        <p>หากท่านมีข้อสงสัยเกี่ยวกับนโยบายความเป็นส่วนตัวนี้ หรือประสงค์จะใช้สิทธิของเจ้าของข้อมูลส่วนบุคคล สามารถติดต่อได้ที่:<br/>
+        <strong>เจ้าหน้าที่คุ้มครองข้อมูล / ฝ่ายประสานงาน บริษัท ศิริวัตร์เมธานินท์ กรุ๊ป จำกัด</strong><br/>
+        อีเมล: <a href="mailto:contact@siriwatmedhanin.com">contact@siriwatmedhanin.com</a> | โทร: 091-909-8902<br/>
+        เวลาทำการ: วันจันทร์ - ศุกร์ 08:30 - 17:30 น.</p>
+      </div>
+      <div class="privacy-modal__footer">
+        <button type="button" class="cookie-btn cookie-btn--accept" id="privacyModalConfirm" data-i18n="privacyModalCloseBtn">ปิดหน้าต่าง</button>
+      </div>
+    </div>
+  </div>
+
+
+
   <!-- JS -->
   <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/cms-loader.js"></script>
+
 </body>
 </html>

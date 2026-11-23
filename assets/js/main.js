@@ -304,3 +304,112 @@ document.addEventListener('DOMContentLoaded', () => {
     mGoTo(0);
     mStart();
   }
+
+  // ---- Cookie Consent Banner & Privacy Policy Modal (PDPA) ----
+  (function initCookieAndPrivacy() {
+    function setup() {
+      const cookieBanner = document.getElementById('cookieBanner');
+      const cookieAcceptAllBtn = document.getElementById('cookieAcceptAllBtn');
+      const cookieEssentialBtn = document.getElementById('cookieEssentialBtn');
+      const privacyModal = document.getElementById('privacyModal');
+      const privacyModalClose = document.getElementById('privacyModalClose');
+      const privacyModalConfirm = document.getElementById('privacyModalConfirm');
+      const privacyModalBackdrop = document.getElementById('privacyModalBackdrop');
+      const openPrivacyPolicyLink = document.getElementById('openPrivacyPolicyLink');
+
+      // Check existing consent in localStorage
+      try {
+        const savedConsent = localStorage.getItem('smg_cookie_consent');
+        if (!savedConsent && cookieBanner) {
+          setTimeout(() => {
+            cookieBanner.style.display = 'block';
+            requestAnimationFrame(() => {
+              cookieBanner.classList.add('cookie-banner--visible');
+            });
+          }, 400);
+        }
+      } catch (e) {
+        if (cookieBanner) cookieBanner.style.display = 'block';
+      }
+
+      function handleConsent(type) {
+        try {
+          localStorage.setItem('smg_cookie_consent', JSON.stringify({
+            choice: type,
+            timestamp: new Date().toISOString()
+          }));
+        } catch (e) {}
+
+        if (cookieBanner) {
+          cookieBanner.classList.remove('cookie-banner--visible');
+          setTimeout(() => {
+            cookieBanner.style.display = 'none';
+          }, 350);
+        }
+      }
+
+      if (cookieAcceptAllBtn) {
+        cookieAcceptAllBtn.addEventListener('click', () => handleConsent('all'));
+      }
+      if (cookieEssentialBtn) {
+        cookieEssentialBtn.addEventListener('click', () => handleConsent('essential'));
+      }
+
+      // Modal helpers
+      function openPrivacyModal() {
+        if (!privacyModal) return;
+        privacyModal.hidden = false;
+        document.body.classList.add('modal-open');
+        requestAnimationFrame(() => {
+          privacyModal.classList.add('privacy-modal--visible');
+        });
+      }
+
+      function closePrivacyModal() {
+        if (!privacyModal) return;
+        privacyModal.classList.remove('privacy-modal--visible');
+        document.body.classList.remove('modal-open');
+        setTimeout(() => {
+          privacyModal.hidden = true;
+        }, 300);
+      }
+
+      if (openPrivacyPolicyLink) {
+        openPrivacyPolicyLink.addEventListener('click', (e) => {
+          e.preventDefault();
+          openPrivacyModal();
+        });
+      }
+
+      // Delegate click on any cookie-banner privacy link (even after language switch)
+      document.addEventListener('click', (e) => {
+        const link = e.target.closest('#cookiePrivacyLink, .cookie-banner__link');
+        if (link) {
+          e.preventDefault();
+          openPrivacyModal();
+        }
+      });
+
+      if (privacyModalClose) {
+        privacyModalClose.addEventListener('click', closePrivacyModal);
+      }
+      if (privacyModalConfirm) {
+        privacyModalConfirm.addEventListener('click', closePrivacyModal);
+      }
+      if (privacyModalBackdrop) {
+        privacyModalBackdrop.addEventListener('click', closePrivacyModal);
+      }
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && privacyModal && !privacyModal.hidden) {
+          closePrivacyModal();
+        }
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', setup);
+    } else {
+      setup();
+    }
+  })();
+

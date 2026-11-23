@@ -142,6 +142,15 @@ const translations = {
     ecomCtaSub:     'พร้อมให้คำปรึกษาแนวทาง วางแผนงบประมาณ และออกแบบแพ็กเกจให้ตรงกับเป้าหมายธุรกิจของคุณ',
     ecomCtaQuote:   'ขอใบเสนอราคา',
     ecomCtaConsult: 'ปรึกษาทีมงานฟรี',
+    // PDPA & Cookie Banner
+    cookieNoticeText: 'เว็บไซต์บริษัท ศิริวัตร์เมธานินท์ กรุ๊ป จำกัด ใช้คุกกี้เพื่อพัฒนาประสบการณ์การใช้งานของท่าน อ่านเพิ่มเติมได้ที่ <a href="javascript:void(0)" class="cookie-banner__link" id="cookiePrivacyLink">นโยบายความเป็นส่วนตัว</a>',
+    cookieAcceptAllBtn: 'ยอมรับทั้งหมด',
+    cookieEssentialBtn: 'ยอมรับเฉพาะที่จำเป็น',
+    privacyPolicyLink: 'นโยบายความเป็นส่วนตัว',
+    privacyModalTitle: 'นโยบายความเป็นส่วนตัว (Privacy Policy)',
+    privacyModalCloseBtn: 'ปิดหน้าต่าง',
+    privacyModalBody: "<p class=\"privacy-modal__lead\"><strong>บริษัท ศิริวัตร์เมธานินท์ กรุ๊ป จำกัด</strong> (\"บริษัท\") ให้ความสำคัญอย่างยิ่งต่อการคุ้มครองข้อมูลส่วนบุคคลของท่าน นโยบายความเป็นส่วนตัวฉบับนี้จัดทำขึ้นเพื่อให้สอดคล้องกับพระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 (PDPA) โดยอธิบายถึงวิธีการเก็บรวบรวม ใช้ เปิดเผย และปกป้องข้อมูลส่วนบุคคลของท่านเมื่อเข้าชมเว็บไซต์หรือติดต่อประสานงานกับบริษัท</p><h4>1. ผู้ควบคุมข้อมูลส่วนบุคคล (Data Controller)</h4><p><strong>บริษัท ศิริวัตร์เมธานินท์ กรุ๊ป จำกัด (SIRIWATMEDHANIN GROUP CO., LTD.)</strong><br/>สำนักงานใหญ่: 115/1 หมู่ที่ 2 ตำบลท่าแค อำเภอเมืองพัทลุง จังหวัดพัทลุง 93000<br/>เลขประจำตัวผู้เสียภาษี: 0935569001087<br/>อีเมล: contact@siriwatmedhanin.com | โทรศัพท์: 091-909-8902</p><h4>2. ข้อมูลส่วนบุคคลที่เราเก็บรวบรวม</h4><p>บริษัทเก็บรวบรวมข้อมูลส่วนบุคคลเท่าที่จำเป็นตามวัตถุประสงค์ ได้แก่:</p><ul><li><strong>ข้อมูลการใช้งานเว็บไซต์และคุกกี้ (Cookies):</strong> คุกกี้การตั้งค่าพื้นฐาน (เช่น การเลือกภาษา TH/EN/ZH) และสถานะการยินยอมคุกกี้ (Cookie Consent) ซึ่งเก็บไว้ในอุปกรณ์ของท่าน (Local Storage) เพื่ออำนวยความสะดวกในการใช้งาน</li><li><strong>ข้อมูลการติดต่อทางธุรกิจ:</strong> ข้อมูลที่ท่านให้ไว้เมื่อติดต่อสอบถาม ขอใบเสนอราคา หรือประสานงานความร่วมมือ B2B ผ่านทางแบบฟอร์ม อีเมล โทรศัพท์ หรือแอปพลิเคชันส่งข้อความ เช่น ชื่อ-นามสกุล, ชื่อบริษัท/หน่วยงาน, หมายเลขโทรศัพท์, อีเมล และรายละเอียดความต้องการทางธุรกิจ</li></ul><h4>3. วัตถุประสงค์ในการเก็บรวบรวมและใช้ข้อมูล</h4><ul><li>เพื่อการติดต่อสื่อสาร ตอบข้อซักถาม และจัดทำใบเสนอราคาหรือข้อเสนอทางธุรกิจ B2B</li><li>เพื่อส่งมอบบริการและการประสานงานตามสัญญาหรือข้อตกลงร่วมกัน</li><li>เพื่อปรับปรุง ประเมิน และพัฒนาประสิทธิภาพการแสดงผลของเว็บไซต์ให้เหมาะสมกับผู้ใช้งาน</li><li>เพื่อการปฏิบัติตามกฎหมายที่เกี่ยวข้องและการใช้สิทธิเรียกร้องทางกฎหมาย</li></ul><h4>4. สิทธิของเจ้าของข้อมูลส่วนบุคคลตาม PDPA</h4><p>ท่านมีสิทธิตามกฎหมายคุ้มครองข้อมูลส่วนบุคคล ดังต่อไปนี้:</p><ul><li>สิทธิในการเข้าถึงและขอรับสำเนาข้อมูลส่วนบุคคลของท่าน</li><li>สิทธิในการขอให้แก้ไขข้อมูลให้ถูกต้อง เป็นปัจจุบัน และสมบูรณ์</li><li>สิทธิในการขอให้ลบ ทำลาย หรือทำให้ข้อมูลไม่สามารถระบุตัวบุคคลได้</li><li>สิทธิในการระงับการใช้ข้อมูลส่วนบุคคล</li><li>สิทธิในการคัดค้านการเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูล</li><li>สิทธิในการเพิกถอนความยินยอม (กรณีที่ประมวลผลข้อมูลโดยอาศัยความยินยอม)</li></ul><h4>5. การติดต่อเรา</h4><p>หากท่านมีข้อสงสัยเกี่ยวกับนโยบายความเป็นส่วนตัวนี้ หรือประสงค์จะใช้สิทธิของเจ้าของข้อมูลส่วนบุคคล สามารถติดต่อได้ที่:<br/><strong>เจ้าหน้าที่คุ้มครองข้อมูล / ฝ่ายประสานงาน บริษัท ศิริวัตร์เมธานินท์ กรุ๊ป จำกัด</strong><br/>อีเมล: <a href=\"mailto:contact@siriwatmedhanin.com\">contact@siriwatmedhanin.com</a> | โทร: 091-909-8902<br/>เวลาทำการ: วันจันทร์ - ศุกร์ 08:30 - 17:30 น.</p>",
+
   },
 
   en: {
@@ -283,6 +292,15 @@ const translations = {
     ecomCtaSub:     'Get strategic advice, budget planning, and customized solutions tailored to your business goals.',
     ecomCtaQuote:   'Request Quote',
     ecomCtaConsult: 'Free Consultation',
+    // PDPA & Cookie Banner
+    cookieNoticeText: 'Siriwatmedhanin Group Co., Ltd. uses cookies to enhance your browsing experience. Read more in our <a href="javascript:void(0)" class="cookie-banner__link" id="cookiePrivacyLink">Privacy Policy</a>.',
+    cookieAcceptAllBtn: 'Accept All',
+    cookieEssentialBtn: 'Essential Only',
+    privacyPolicyLink: 'Privacy Policy',
+    privacyModalTitle: 'Privacy Policy',
+    privacyModalCloseBtn: 'Close',
+    privacyModalBody: "<p class=\"privacy-modal__lead\"><strong>Siriwatmedhanin Group Co., Ltd.</strong> (\"the Company\") is strongly committed to protecting your personal data in accordance with the Thailand Personal Data Protection Act B.E. 2562 (PDPA). This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you visit our website or communicate with us.</p><h4>1. Data Controller</h4><p><strong>Siriwatmedhanin Group Co., Ltd. (SIRIWATMEDHANIN GROUP CO., LTD.)</strong><br/>Headquarters: 115/1 Moo 2, Tha Khae Subdistrict, Mueang Phatthalung District, Phatthalung 93000, Thailand<br/>Tax Identification Number: 0935569001087<br/>Email: contact@siriwatmedhanin.com | Phone: 091-909-8902</p><h4>2. Personal Data We Collect</h4><p>We collect personal information only to the extent necessary:</p><ul><li><strong>Browsing Data &amp; Essential Cookies:</strong> Preference cookies (such as language selection TH/EN/ZH) and cookie consent status stored locally on your device to ensure smooth website navigation.</li><li><strong>Business Contact Information:</strong> Details you provide when contacting us for inquiries, quotations, or B2B collaborations via email, phone, or messaging platforms, including your name, company name, phone number, email address, and business inquiries.</li></ul><h4>3. Purposes of Data Processing</h4><ul><li>To respond to your inquiries and prepare B2B quotations or commercial proposals.</li><li>To provide services and coordinate according to business agreements or contracts.</li><li>To optimize and improve website performance, functionality, and user experience.</li><li>To comply with applicable legal obligations and statutory requirements.</li></ul><h4>4. Your Rights Under the PDPA</h4><p>As a data subject, you have the following rights under the PDPA:</p><ul><li>Right to access and obtain a copy of your personal data.</li><li>Right to request rectification of inaccurate or incomplete data.</li><li>Right to request erasure, destruction, or anonymization of your data.</li><li>Right to restrict the processing of your personal data.</li><li>Right to object to the collection, use, or disclosure of your data.</li><li>Right to withdraw your consent at any time where processing is based on consent.</li></ul><h4>5. Contact Us</h4><p>If you have any questions regarding this Privacy Policy or wish to exercise your rights, please contact:<br/><strong>Privacy Team / Siriwatmedhanin Group Co., Ltd.</strong><br/>Email: <a href=\"mailto:contact@siriwatmedhanin.com\">contact@siriwatmedhanin.com</a> | Phone: +66 91-909-8902<br/>Operating Hours: Mon - Fri 08:30 - 17:30 (ICT)</p>",
+
   },
 
   zh: {
@@ -424,6 +442,15 @@ const translations = {
     ecomCtaSub:     '我们为您提供策略咨询、预算规划与定制化代运营方案，助力业务增长。',
     ecomCtaQuote:   '获取报价单',
     ecomCtaConsult: '免费咨询顾问',
+    // PDPA & Cookie Banner
+    cookieNoticeText: 'Siriwatmedhanin Group Co., Ltd. 使用 Cookie 以优化您的浏览体验。详情请参阅<a href="javascript:void(0)" class="cookie-banner__link" id="cookiePrivacyLink">隐私政策</a>。',
+    cookieAcceptAllBtn: '全部接受',
+    cookieEssentialBtn: '仅必要 Cookie',
+    privacyPolicyLink: '隐私政策',
+    privacyModalTitle: '隐私政策 (Privacy Policy)',
+    privacyModalCloseBtn: '关闭窗口',
+    privacyModalBody: "<p class=\"privacy-modal__lead\"><strong>Siriwatmedhanin Group Co., Ltd.（诗丽瓦美塔宁集团有限公司）</strong>（以下简称“本公司”）高度重视保护您的个人隐私与数据安全。本隐私政策依据泰国《个人数据保护法》（PDPA B.E. 2562）制定，旨在说明当您访问本网站或与我们沟通合作时，我们如何收集、使用、披露及保护您的个人数据。</p><h4>1. 个人数据控制者（Data Controller）</h4><p><strong>Siriwatmedhanin Group Co., Ltd.（诗丽瓦美塔宁集团有限公司）</strong><br/>总部地址：115/1 Moo 2, Tha Khae Subdistrict, Mueang Phatthalung District, Phatthalung 93000, Thailand<br/>纳税人登记号：0935569001087<br/>电子邮箱：contact@siriwatmedhanin.com | 电话：091-909-8902</p><h4>2. 我们收集的个人数据</h4><p>我们仅收集实现业务目的所必需的个人信息，包括：</p><ul><li><strong>浏览数据与必要 Cookie：</strong>用于保存用户界面首选项（如泰/英/中语言选择）及 Cookie 授权状态的本地存储数据，以确保网站基础功能的顺畅运行。</li><li><strong>商务联络信息：</strong>当您通过电子邮件、电话或商务表单向我们咨询产品、索取报价或洽谈 B2B 合作时提供的信息，包括姓名、公司名称、联络电话、电子邮箱及业务需求详情。</li></ul><h4>3. 数据处理的目的</h4><ul><li>回复您的业务咨询并提供 B2B 商业合作报价与方案。</li><li>履行商业协议或合同中的服务交付与沟通协调工作。</li><li>优化与提升本网站的展示性能与用户交互体验。</li><li>遵守相关的法律法规要求或维护合法权益。</li></ul><h4>4. 您在 PDPA 项下的法定权利</h4><p>根据泰国《个人数据保护法》（PDPA），您享有以下合法权利：</p><ul><li>查阅权及获取您个人数据副本的权利。</li><li>更正权：要求修正不准确或不完整的信息。</li><li>删除权：在符合法律条件的前提下要求删除或匿名化数据。</li><li>限制处理权：要求暂停使用您的个人数据。</li><li>反对权：反对收集、使用或披露您的个人数据。</li><li>撤回同意权：随时撤回此前授予的处理同意。</li></ul><h4>5. 联系方式</h4><p>若您对本隐私政策有任何疑问或希望行使您的数据主体权利，请随时联系我们：<br/><strong>诗丽瓦美塔宁集团有限公司 数据保护与商务联络组</strong><br/>电子邮箱：<a href=\"mailto:contact@siriwatmedhanin.com\">contact@siriwatmedhanin.com</a> | 电话：+66 91-909-8902<br/>工作时间：周一至周五 08:30 - 17:30（泰国时间）</p>",
+
   }
 };
 

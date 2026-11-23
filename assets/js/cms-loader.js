@@ -117,7 +117,7 @@
       if (links.sgfruit_website) {
         document.querySelectorAll('a.shop-btn--web').forEach(a => a.href = links.sgfruit_website);
       }
-      const sgFruitTiktokUrl = links.sgfruit_tiktok || links.sunnygrove_tiktok;
+      const sgFruitTiktokUrl = links.sgfruit_tiktok;
       if (sgFruitTiktokUrl) {
         document.querySelectorAll('.shop-online-brand:last-of-type a.shop-btn--tiktok, .service-card:nth-of-type(2) a.shop-btn--tiktok').forEach(a => a.href = sgFruitTiktokUrl);
       }
