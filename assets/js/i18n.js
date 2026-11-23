@@ -94,7 +94,7 @@ const translations = {
     contactAddrLabel:'ที่อยู่สำนักงานใหญ่', contactAddrVal:'115/1 หมู่ที่ 2 ตำบลท่าแค<br/>อำเภอเมืองพัทลุง จังหวัดพัทลุง 93000',
     contactPhoneLabel:'โทรศัพท์', contactPhoneVal:'091-909-8902',
     contactEmailLabel:'อีเมล', contactTaxLabel:'เลขประจำตัวผู้เสียภาษี',
-    contactFbLabel:'Facebook',
+    contactFbLabel:'Facebook', contactLineLabel:'LINE Official',
 
     // Footer links
     footerBiz1:'ตำรับแม่ฉวี — อาหารใต้', footerBiz2:'SG FRUIT — ผลไม้ตามฤดูกาล',
@@ -244,7 +244,7 @@ const translations = {
     contactAddrLabel:'Headquarters', contactAddrVal:'115/1 Moo 2, Tha Khae, Mueang Phatthalung,<br/>Phatthalung 93000',
     contactPhoneLabel:'Phone', contactPhoneVal:'091-909-8902',
     contactEmailLabel:'Email', contactTaxLabel:'Tax ID',
-    contactFbLabel:'Facebook',
+    contactFbLabel:'Facebook', contactLineLabel:'LINE Official',
 
     // Footer links
     footerBiz1:'Tamrab Mae Chawi — Southern Food', footerBiz2:'SG FRUIT — Seasonal Fruits',
@@ -394,7 +394,7 @@ const translations = {
     contactAddrLabel:'总部地址', contactAddrVal:'115/1 村2，塔凯，博他伦市，<br/>博他伦府 93000',
     contactPhoneLabel:'电话', contactPhoneVal:'091-909-8902',
     contactEmailLabel:'电子邮件', contactTaxLabel:'纳税人识别号',
-    contactFbLabel:'Facebook',
+    contactFbLabel:'Facebook', contactLineLabel:'LINE Official',
 
     // Footer links
     footerBiz1:'南部传统美食', footerBiz2:'SG FRUIT — 当季鲜果',

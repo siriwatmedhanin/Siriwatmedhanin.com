@@ -70,6 +70,11 @@
         el.href = data.messenger_url;
       });
     }
+    if (data.line_url) {
+      document.querySelectorAll('a.float-item--line, a.contact-link--line, a.footer__social-link--line').forEach(el => {
+        el.href = data.line_url;
+      });
+    }
 
     // Update Tax ID
     if (data.tax_id) {
