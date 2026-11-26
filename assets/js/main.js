@@ -182,6 +182,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
   stats.forEach(stat => counterObserver.observe(stat));
 
+  // ---- Clickable Service Cards (e.g. SG FRUIT Brand Landing) ----
+  document.querySelectorAll('.service-card--clickable').forEach(card => {
+    card.addEventListener('click', (e) => {
+      // Ignore clicks originating from inside shop buttons or any anchor tag
+      if (e.target.closest('.service-card__shop-btns') || e.target.closest('a')) {
+        return;
+      }
+      const href = card.dataset.href;
+      if (href) {
+        window.location.href = href;
+      }
+    });
+
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        if (!e.target.closest('.service-card__shop-btns') && !e.target.closest('a')) {
+          e.preventDefault();
+          const href = card.dataset.href;
+          if (href) {
+            window.location.href = href;
+          }
+        }
+      }
+    });
+  });
+
+  // Ensure shop buttons stop event propagation so they never trigger card click
+  document.querySelectorAll('.service-card__shop-btns a').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+  });
+
 });
 
   // ---- Floating Contact — always visible ----
