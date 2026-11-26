@@ -3986,7 +3986,7 @@ body.modal-open {
   color: var(--color-primary-dark);
 }
 .brand-hero__title {
-  font-family: var(--font-display);
+  font-family: 'Kanit', sans-serif !important;
   font-size: clamp(1.75rem, 3.5vw, 2.45rem);
   font-weight: 700;
   color: var(--color-primary-dark);
@@ -3994,13 +3994,16 @@ body.modal-open {
   margin-bottom: 24px;
 }
 .brand-hero__intro {
+  font-family: 'Prompt', 'Kanit', sans-serif !important;
   font-size: 1.05rem;
-  color: var(--color-text);
+  font-weight: 400;
+  color: var(--color-text-light);
   line-height: 1.85;
-  text-align: justify;
-  text-align-last: center;
-  max-width: 880px;
+  text-align: center;
+  max-width: 840px;
   margin: 0 auto;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Brand Sections Generic */
@@ -4025,7 +4028,7 @@ body.modal-open {
   text-transform: uppercase;
 }
 .brand-section__title {
-  font-family: var(--font-display);
+  font-family: 'Kanit', sans-serif !important;
   font-size: clamp(1.4rem, 2.6vw, 1.95rem);
   color: var(--color-primary-dark);
   margin-bottom: 16px;
@@ -4039,9 +4042,11 @@ body.modal-open {
   border-radius: 2px;
 }
 .brand-section__lead {
+  font-family: 'Prompt', 'Kanit', sans-serif;
   font-size: 1rem;
   color: var(--color-text-light);
   line-height: 1.8;
+  text-align: center;
 }
 
 /* Section 1: Features Grid */
@@ -4300,7 +4305,7 @@ body.modal-open {
   border-radius: 50%;
 }
 .brand-cta-box__title {
-  font-family: var(--font-display);
+  font-family: 'Kanit', sans-serif !important;
   font-size: clamp(1.5rem, 2.8vw, 2rem);
   color: var(--color-primary-dark);
   margin-bottom: 12px;
@@ -4388,4 +4393,22 @@ body.modal-open {
     width: 100%;
     justify-content: center;
   }
+}
+
+/* Brand page EN Typography */
+[lang="en"] .brand-hero__title,
+[lang="en"] .brand-section__title,
+[lang="en"] .brand-category-card__title,
+[lang="en"] .brand-cta-box__title {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+[lang="en"] .brand-hero__intro,
+[lang="en"] .brand-section__lead,
+[lang="en"] .brand-feature-card__text,
+[lang="en"] .brand-category-card__desc,
+[lang="en"] .brand-standard-item__text,
+[lang="en"] .faq-item__question,
+[lang="en"] .faq-item__answer p {
+  font-family: 'Montserrat', sans-serif !important;
 }
