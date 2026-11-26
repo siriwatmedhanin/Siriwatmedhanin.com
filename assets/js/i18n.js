@@ -480,7 +480,7 @@ function applyLanguage(lang) {
 }
 
 /* ---------- Init ---------- */
-document.addEventListener('DOMContentLoaded', () => {
+function initI18n() {
   // Wire up buttons
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
@@ -488,5 +488,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Restore saved language (default TH)
   const saved = localStorage.getItem('smg-lang') || 'th';
-  applyLanguage(saved);
-});
+  if (saved !== 'th') {
+    applyLanguage(saved);
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initI18n);
+} else {
+  initI18n();
+}
