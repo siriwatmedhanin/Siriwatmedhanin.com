@@ -486,12 +486,6 @@ ul { list-style: none; }
 }
 .service-card:hover::before { transform: scaleX(1); }
 
-.service-card--featured {
-  border-color: var(--color-primary);
-  background: linear-gradient(160deg, #fdf7f9 0%, #f9eff3 100%);
-}
-.service-card--featured::before { transform: scaleX(1); }
-
 .service-card__icon {
   width: 60px;
   height: 60px;
@@ -2525,14 +2519,14 @@ ul { list-style: none; }
   display: block;
 }
 
-.service-card--featured .service-card__shop-btns {
+.service-card--clickable .service-card__shop-btns {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
   margin-top: 16px;
   padding-top: 14px;
 }
-.service-card--featured .service-card__shop-btns .shop-btn {
+.service-card--clickable .service-card__shop-btns .shop-btn {
   padding: 5px 9px;
   font-size: 0.72rem;
   gap: 5px;
